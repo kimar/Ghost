@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/TryGhost/Ghost-UI/blob/master/LICENSE)
  */
 
+ var path = require('path'),
+     bourbon = require('node-bourbon').includePaths,
+     breakpoint = path.join(__dirname, 'bower_components/breakpoint-sass/stylesheets/'),
+     normalize = path.join(__dirname, 'bower_components/normalize.css/');
+
 module.exports = function (grunt) {
     'use strict';
 
@@ -44,18 +49,35 @@ module.exports = function (grunt) {
             }
         },
 
+        // ### config for grunt-sass
+        // compile sass to css
         sass: {
             dist: {
+                options: {
+                    includePaths: bourbon.concat(breakpoint, normalize)
+                },
                 files: {
                     'dist/css/<%= pkg.name %>.css': 'sass/screen.scss'
                 }
             },
             compress: {
                 options: {
-                    'outputStyle': 'compressed'
+                    'outputStyle': 'compressed',
+                    includePaths: bourbon.concat(breakpoint, normalize)
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
+                }
+            }
+        },
+
+        // ### config for grunt-shell
+        // command line tools
+        shell: {
+            bower: {
+                command: path.resolve(__dirname + '/node_modules/.bin/bower install'),
+                options: {
+                    stdout: true
                 }
             }
         }
@@ -71,7 +93,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-docs', 'copy:docs');
 
     // Full distribution task
-    grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'dist-docs']);
+    grunt.registerTask('dist', ['clean', 'shell', 'dist-css', 'copy:fonts', 'dist-docs']);
     grunt.registerTask('default', 'Build CSS, JS & templates for development', ['dist']);
 
 };
