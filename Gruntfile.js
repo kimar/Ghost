@@ -6,9 +6,8 @@
  */
 
  var path = require('path'),
-     bourbon = require('node-bourbon').includePaths,
      breakpoint = path.join(__dirname, 'bower_components/breakpoint-sass/stylesheets/'),
-     normalize = path.join(__dirname, 'bower_components/normalize.css/');
+     normalize = path.join(__dirname, 'bower_components/normalize-scss/');
 
 module.exports = function (grunt) {
     'use strict';
@@ -54,7 +53,8 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
-                    includePaths: bourbon.concat(breakpoint, normalize)
+                    loadPath: [breakpoint, normalize],
+                    require: ['bourbon']
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.css': 'sass/screen.scss'
@@ -62,8 +62,9 @@ module.exports = function (grunt) {
             },
             compress: {
                 options: {
-                    'outputStyle': 'compressed',
-                    includePaths: bourbon.concat(breakpoint, normalize)
+                    style: 'compressed',
+                    loadPath: [breakpoint, normalize],
+                    require: ['bourbon']
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
