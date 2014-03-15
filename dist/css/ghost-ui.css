@@ -4013,9 +4013,6 @@ body.zen {
   color: #a5acae;
   display: table-cell;
   vertical-align: middle; }
-  @media (max-width: 630px) {
-    .forgotten-form {
-      max-width: 264px; } }
   .forgotten-form div {
     position: relative;
     margin: 0 0 1em 0;
@@ -4034,16 +4031,11 @@ body.zen {
     -webkit-transition: background ease 0.25s;
     -moz-transition: background ease 0.25s;
     transition: background ease 0.25s; }
-    @media (max-width: 630px) {
-      .forgotten-form input {
-        -webkit-transition: none;
-        -moz-transition: none;
-        transition: none;
-        max-width: 244px; } }
     .forgotten-form input:focus {
       border: none;
       background: #484c50; }
   .forgotten-form .email-wrap {
+    width: 100%;
     position: relative;
     border-radius: 2px; }
     .forgotten-form .email-wrap .email {
