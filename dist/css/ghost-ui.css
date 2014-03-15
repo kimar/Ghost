@@ -1968,7 +1968,7 @@ nav li a {
     #publish-bar .splitbutton-delete .editor-options a:hover, .suggestions a:hover, .menu p:hover, .menu-drop p:hover, .menu-drop-left p:hover, .menu-drop-right p:hover, .menu-left p:hover, .menu-right p:hover, #publish-bar .splitbutton-save .editor-options p:hover,
     #publish-bar .splitbutton-delete .editor-options p:hover, .suggestions p:hover {
       background: #5ba4e5;
-      box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset, rgba(0, 0, 0, 0.5) 0 1px 5px; }
+      box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset; }
   .menu .active a:before, .menu-drop .active a:before, .menu-drop-left .active a:before, .menu-drop-right .active a:before, .menu-left .active a:before, .menu-right .active a:before, #publish-bar .splitbutton-save .editor-options .active a:before,
   #publish-bar .splitbutton-delete .editor-options .active a:before, .suggestions .active a:before {
     font-family: "Icons";
