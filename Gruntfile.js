@@ -81,6 +81,13 @@ module.exports = function (grunt) {
                     stdout: true
                 }
             }
+        },
+
+        watch: {
+            sass: {
+                files: '**/*.scss',
+                tasks: ['sass']                
+            }
         }
     });
 
@@ -92,6 +99,9 @@ module.exports = function (grunt) {
 
     // Docs distribution task.
     grunt.registerTask('dist-docs', 'copy:docs');
+
+    // Watch/Dev task.
+    grunt.registerTask('dev', 'watch');
 
     // Full distribution task
     grunt.registerTask('dist', ['clean', 'shell', 'dist-css', 'copy:fonts', 'dist-docs']);
