@@ -45,15 +45,17 @@ Guidelines for bug reports:
 
 
 A good bug report shouldn't leave others needing to chase you up for more
-information. Please try to be as detailed as possible in your report. What is
-your environment? What steps will reproduce the issue? What browser(s) and OS
-experience the problem? Do other browsers show the bug differently? What
-would you expect to be the outcome? All these details will help people to fix
-any potential bugs.
+information. Please try to be as detailed as possible in your report and include 
+screenshots wherever possible. What is your environment? What steps will reproduce 
+the issue? What browser(s) and OS experience the problem? Do other browsers show 
+the bug differently? Whatwould you expect to be the outcome? All these details 
+will help people to fixany potential bugs.
 
 Example:
 
 > Short and descriptive example bug report title
+>
+> [screenshot of the issue]
 >
 > A summary of the issue and the browser/OS environment in which it occurs. If
 > suitable, include the steps required to reproduce the bug.
@@ -145,7 +147,7 @@ included in the project:
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `master` branch.
+    with a clear title and description against the `master` branch. If you are making visual changes - include a before/after screenshot to make it easy to understand and review.
 
 
 ## Code guidelines
