@@ -483,7 +483,7 @@ write our Sass something like this:
     display: block;
     width: 200px;
     height: 40px;
-    @include icon($i-camera, 16px, #fff) {vertical-align:-10%;};
+    @include icon($i-camera, 16px, #fff) {vertical-align: -10%;};
 }
 
 This would then output full CSS something like this:
@@ -633,6 +633,12 @@ This would then output full CSS something like this:
 .vertical {
   display: table-cell;
   vertical-align: middle; }
+
+.hgroup {
+  margin-bottom: 1.6em; }
+  .hgroup h1, .hgroup h2, .hgroup h3,
+  .hgroup h4, .hgroup h5, .hgroup h6, .hgroup p {
+    margin: 0; }
 
 /* ==========================================================================
    Global Styles
@@ -1158,6 +1164,7 @@ input[type="checkbox"] {
     border-right: none;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transition: all 0.2s ease;
@@ -1310,6 +1317,7 @@ input[type="reset"] {
     border-style: solid solid solid none;
     -webkit-transform: scale(0.9999);
     -moz-transform: scale(0.9999);
+    -ms-transform: scale(0.9999);
     -o-transform: scale(0.9999);
     transform: scale(0.9999);
     -webkit-transition: border-color 0.3s ease;
@@ -1397,12 +1405,14 @@ input[type="reset"] {
     .splitbtn .options.active:before, .splitbutton .options.active:before, .splitbutton-save .options.active:before, .splitbutton-add .options.active:before, .splitbutton-delete .options.active:before, .splitbutton-alt .options.active:before {
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
       -o-transform: rotate(360deg);
       transform: rotate(360deg); }
     .splitbtn .options.up.active:before, .splitbutton .options.up.active:before, .splitbutton-save .options.up.active:before, .splitbutton-add .options.up.active:before, .splitbutton-delete .options.up.active:before, .splitbutton-alt .options.up.active:before {
       margin-top: -4px;
       -webkit-transform: rotate(540deg);
       -moz-transform: rotate(540deg);
+      -ms-transform: rotate(540deg);
       -o-transform: rotate(540deg);
       transform: rotate(540deg); }
     .splitbtn .options:hover, .splitbutton .options:hover, .splitbutton-save .options:hover, .splitbutton-add .options:hover, .splitbutton-delete .options:hover, .splitbutton-alt .options:hover {
@@ -1420,6 +1430,7 @@ input[type="reset"] {
         content: "\e001";
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); }
       .splitbtn .options:hover:hover, .splitbutton .options:hover:hover, .splitbutton-save .options:hover:hover, .splitbutton-add .options:hover:hover, .splitbutton-delete .options:hover:hover, .splitbutton-alt .options:hover:hover {
@@ -1437,6 +1448,7 @@ input[type="reset"] {
       margin-top: -4px;
       -webkit-transform: rotate(540deg);
       -moz-transform: rotate(540deg);
+      -ms-transform: rotate(540deg);
       -o-transform: rotate(540deg);
       transform: rotate(540deg);
       -webkit-transition-property: -webkit-transform;
@@ -2118,6 +2130,7 @@ nav li a {
 .js-bb-notification {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
 
@@ -2135,6 +2148,7 @@ nav li a {
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
   .notification:before, .notification-success:before, .notification-error:before, .notification-warn:before, .notification-info:before {
@@ -2285,6 +2299,7 @@ nav li a {
   transition: all 0.15s linear 0s;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
 
@@ -2295,6 +2310,7 @@ nav li a {
   transition: opacity 0.2s linear 0s;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
   .fade.in {
@@ -2466,6 +2482,7 @@ nav li a {
     text-decoration: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none; }
     .image-uploader .image-url:hover,
     .image-uploader .image-upload:hover {
@@ -2524,10 +2541,12 @@ nav li a {
     opacity: 0;
     -webkit-transform-origin: right;
     -moz-transform-origin: right;
+    -ms-transform-origin: right;
     -o-transform-origin: right;
     transform-origin: right;
     -webkit-transform: scale(14);
     -moz-transform: scale(14);
+    -ms-transform: scale(14);
     -o-transform: scale(14);
     transform: scale(14);
     font-size: 23px;
@@ -3150,6 +3169,7 @@ nav li a {
   hyphens: auto;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   cursor: default; }
   @media (max-width: 1000px) {
@@ -3282,6 +3302,7 @@ body.zen {
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
   @media (max-width: 1000px) {
@@ -3436,6 +3457,7 @@ body.zen {
     box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset, black 0 1px 3px;
     -webkit-user-select: none;
     -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none; }
     #entry-tags .tag:after {
       font-family: "Icons";
@@ -4230,289 +4252,91 @@ body.zen {
     padding: 0.9em 1.8em;
     font-size: 13px; }
 
-.settings {
-  /* =============================================================================
-     Sidebar
-     ============================================================================= */
-  /* =============================================================================
-     Content
-     ============================================================================= */ }
-  .settings .wrapper {
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px;
+.settings .wrapper {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 800px) {
+    .settings .wrapper {
+      overflow-x: hidden; } }
+.settings .title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 0.8em;
+  margin: 0 0 18px 0;
+  padding: 0;
+  border: none; }
+
+/* =============================================================================
+   Sidebar
+   ============================================================================= */
+.settings-sidebar {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 700;
+  background: #fff;
+  box-shadow: #edece4 1px 0 0; }
+  @media (max-width: 800px) {
+    .settings-sidebar {
+      width: 100%;
+      box-shadow: none; } }
+  .settings-sidebar > header {
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0; }
+    z-index: 400;
+    height: 17px;
+    padding: 30px 15px 30px 40px;
+    margin-bottom: 0;
+    border-bottom: none;
+    box-shadow: #edece4 0 -1px 0 inset, #edece4 1px 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(25%, white), color-stop(100%, rgba(255, 255, 255, 0.9)));
+    background: -webkit-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear, to bottom, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%; }
+    @media (max-width: 1000px) {
+      .settings-sidebar > header {
+        padding-left: 15px; } }
+
+.settings-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -1px;
+  overflow: auto; }
+  @media (max-width: 800px) {
+    .settings-menu {
+      right: 0; } }
+  .settings-menu:before {
+    display: block;
+    content: "";
+    height: 77px; }
+  .settings-menu ul {
+    border-top: none; }
     @media (max-width: 800px) {
-      .settings .wrapper {
-        overflow-x: hidden; } }
-  .settings .title {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 1.6em;
-    line-height: 0.8em;
-    margin: 0 0 18px 0;
-    padding: 0;
-    border: none; }
-  .settings .settings-sidebar {
-    width: 20%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 700;
-    background: #fff;
-    box-shadow: #edece4 1px 0 0; }
+      .settings-menu ul {
+        border-bottom: #edece4 1px solid; } }
+  .settings-menu li {
+    margin-right: 1px;
+    border-top: #fff 1px solid; }
     @media (max-width: 800px) {
-      .settings .settings-sidebar {
-        width: 100%;
-        box-shadow: none; } }
-    .settings .settings-sidebar > header {
-      position: relative;
-      z-index: 400;
-      height: 17px;
-      padding: 30px 15px 30px 40px;
-      margin-bottom: 0;
-      border-bottom: none;
-      box-shadow: #edece4 0 -1px 0 inset, #edece4 1px 0 0;
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(25%, white), color-stop(100%, rgba(255, 255, 255, 0.9)));
-      background: -webkit-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
-      background: linear, to bottom, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%; }
+      .settings-menu li {
+        margin-right: 0;
+        border-top: #edece4 1px solid; } }
+    .settings-menu li a {
+      padding: 15px 15px 15px 40px;
+      border-bottom: none; }
       @media (max-width: 1000px) {
-        .settings .settings-sidebar > header {
-          padding-left: 15px; } }
-  .settings .settings-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: -1px;
-    overflow: auto; }
-    @media (max-width: 800px) {
-      .settings .settings-menu {
-        right: 0; } }
-    .settings .settings-menu:before {
-      display: block;
-      content: "";
-      height: 77px; }
-    .settings .settings-menu ul {
-      border-top: none; }
-      @media (max-width: 800px) {
-        .settings .settings-menu ul {
-          border-bottom: #edece4 1px solid; } }
-    .settings .settings-menu li {
-      margin-right: 1px;
-      border-top: #fff 1px solid; }
-      @media (max-width: 800px) {
-        .settings .settings-menu li {
-          margin-right: 0;
-          border-top: #edece4 1px solid; } }
-      .settings .settings-menu li a {
-        padding: 15px 15px 15px 40px;
-        border-bottom: none; }
-        @media (max-width: 1000px) {
-          .settings .settings-menu li a {
-            padding-left: 15px; } }
-        @media (max-width: 800px) {
-          .settings .settings-menu li a:after {
-            font-family: "Icons";
-            font-weight: normal;
-            font-style: normal;
-            vertical-align: -7%;
-            text-transform: none;
-            speak: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-            content: "\e01d";
-            float: right;
-            margin-top: 5px; }
-          .settings .settings-menu li a:hover {
-            text-decoration: none; } }
-      .settings .settings-menu li:first-child {
-        border-top: none; }
-      .settings .settings-menu li:first-child.active {
-        border-top: none; }
-      @media (min-width: 800px), (min-width: 800px) {
-        .settings .settings-menu li.active {
-          margin-right: 0;
-          position: relative;
-          z-index: 300;
-          border-top: #edece4 1px solid;
-          box-shadow: #fff 1px 0 0, #edece4 0 1px 0;
-          -webkit-transition: all 0.15s ease-out 0;
-          -moz-transition: all 0.15s ease-out 0;
-          transition: all 0.15s ease-out 0; }
-          .settings .settings-menu li.active a {
-            color: #242628;
-            font-weight: bold;
-            background: #fff; } }
-    .settings .settings-menu li a:before {
-      margin-right: 20px; }
-      @media (max-width: 1000px) {
-        .settings .settings-menu li a:before {
-          margin-right: 15px; } }
-    .settings .settings-menu .general a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e006"; }
-    .settings .settings-menu .general a:hover {
-      text-decoration: none; }
-    .settings .settings-menu .publishing a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e02d"; }
-    .settings .settings-menu .publishing a:hover {
-      text-decoration: none; }
-    .settings .settings-menu .services a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e020"; }
-    .settings .settings-menu .services a:hover {
-      text-decoration: none; }
-    .settings .settings-menu .users a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e002"; }
-    .settings .settings-menu .users a:hover {
-      text-decoration: none; }
-    .settings .settings-menu .appearance a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e021"; }
-    .settings .settings-menu .appearance a:hover {
-      text-decoration: none; }
-    .settings .settings-menu .apps a:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e00b"; }
-    .settings .settings-menu .apps a:hover {
-      text-decoration: none; }
-  .settings .settings-content {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 20%;
-    bottom: 0;
-    background: #fff;
-    display: none; }
-    @media (max-width: 800px) {
-      .settings .settings-content {
-        display: none;
-        width: 100%;
-        left: 100%;
-        right: -100%;
-        margin-left: 15px; } }
-    .settings .settings-content img {
-      max-width: 100%; }
-    .settings .settings-content.active {
-      display: block; }
-    .settings .settings-content > header {
-      position: relative;
-      z-index: 200;
-      height: 17px;
-      padding: 30px 220px 29px 40px;
-      border-bottom: #edece4 1px solid;
-      margin-bottom: 40px;
-      text-transform: none;
-      font-weight: normal;
-      line-height: inherit;
-      color: inherit;
-      background: -moz-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(25%, white), color-stop(100%, rgba(255, 255, 255, 0.9)));
-      background: -webkit-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
-      background: -o-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
-      background: -ms-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
-      background: linear, to bottom, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%; }
-      @media (max-width: 1000px) {
-        .settings .settings-content > header {
+        .settings-menu li a {
           padding-left: 15px; } }
       @media (max-width: 800px) {
-        .settings .settings-content > header {
-          padding-left: 115px; } }
-      @media (max-height: 600px), (max-height: 600px) {
-        .settings .settings-content > header {
-          height: auto;
-          padding: 5px;
-          position: absolute;
-          top: 0;
-          right: 0;
-          border: none;
-          background: transparent; }
-          .settings .settings-content > header .title {
-            display: none; } }
-      @media (max-width: 650px) {
-        .settings .settings-content > header {
-          padding-left: 15px; }
-          .settings .settings-content > header .button-back {
-            position: fixed;
-            top: 5px;
-            left: 14px;
-            min-height: 0;
-            height: 30px; }
-            .settings .settings-content > header .button-back:before {
-              left: -9px;
-              border-width: 15px 9px 15px 0; } }
-    .settings .settings-content .page-actions {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      z-index: 700;
-      font-size: 1em; }
-      @media (max-width: 1000px) {
-        .settings .settings-content .page-actions {
-          right: 15px; } }
-      @media (max-width: 650px) {
-        .settings .settings-content .page-actions {
-          position: fixed;
-          top: 5px;
-          right: 4px; }
-          .settings .settings-content .page-actions button {
-            min-height: 0;
-            height: 30px;
-            padding: 0.5em 1.37em; } }
-      .settings .settings-content .page-actions .button-add {
-        position: relative;
-        padding-left: 50px; }
-        .settings .settings-content .page-actions .button-add:before {
+        .settings-menu li a:after {
           font-family: "Icons";
           font-weight: normal;
           font-style: normal;
@@ -4521,49 +4345,268 @@ body.zen {
           speak: none;
           line-height: 1;
           -webkit-font-smoothing: antialiased;
-          content: "\e032";
-          font-size: 1.4em;
-          color: rgba(255, 255, 255, 0.6);
-          position: absolute;
-          top: 0;
-          padding: 9px 8px 0 0;
-          left: 9px;
-          bottom: 0;
-          width: 20px;
-          border-right: #8ba644 1px solid; }
-        .settings .settings-content .page-actions .button-add:hover {
-          text-decoration: none; }
-    .settings .settings-content .content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      padding: 40px;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch; }
-      .settings .settings-content .content:before {
-        display: block;
-        content: "";
-        height: 77px; }
-        @media (max-height: 600px), (max-height: 600px) {
-          .settings .settings-content .content:before {
-            display: none; } }
-      .settings .settings-content .content.no-padding {
-        padding: 0; }
-      @media (max-width: 1000px) {
-        .settings .settings-content .content {
-          padding-left: 15px; } }
-      @media (max-width: 550px) {
-        .settings .settings-content .content {
-          padding: 0 15px 40px; } }
-    .settings .settings-content .description-container, .settings .settings-content .bio-container {
-      max-width: 370px; }
-    .settings .settings-content .word-count {
-      margin-right: 30px;
-      float: right;
-      font-weight: bold;
-      color: #9e9d95; }
+          content: "\e01d";
+          float: right;
+          margin-top: 5px; }
+        .settings-menu li a:hover {
+          text-decoration: none; } }
+    .settings-menu li:first-child {
+      border-top: none; }
+    .settings-menu li:first-child.active {
+      border-top: none; }
+    @media (min-width: 800px), (min-width: 800px) {
+      .settings-menu li.active {
+        margin-right: 0;
+        position: relative;
+        z-index: 300;
+        border-top: #edece4 1px solid;
+        box-shadow: #fff 1px 0 0, #edece4 0 1px 0;
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+        transition: all 0.15s ease-out 0; }
+        .settings-menu li.active a {
+          color: #242628;
+          font-weight: bold;
+          background: #fff; } }
+  .settings-menu li a:before {
+    margin-right: 20px; }
+    @media (max-width: 1000px) {
+      .settings-menu li a:before {
+        margin-right: 15px; } }
+  .settings-menu .general a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e006"; }
+  .settings-menu .general a:hover {
+    text-decoration: none; }
+  .settings-menu .publishing a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e02d"; }
+  .settings-menu .publishing a:hover {
+    text-decoration: none; }
+  .settings-menu .services a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e020"; }
+  .settings-menu .services a:hover {
+    text-decoration: none; }
+  .settings-menu .users a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e002"; }
+  .settings-menu .users a:hover {
+    text-decoration: none; }
+  .settings-menu .appearance a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e021"; }
+  .settings-menu .appearance a:hover {
+    text-decoration: none; }
+  .settings-menu .apps a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e00b"; }
+  .settings-menu .apps a:hover {
+    text-decoration: none; }
+  .settings-menu .code a:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e03e"; }
+  .settings-menu .code a:hover {
+    text-decoration: none; }
+
+/* =============================================================================
+   Content
+   ============================================================================= */
+.settings-content {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 20%;
+  bottom: 0;
+  background: #fff;
+  display: none; }
+  @media (max-width: 800px) {
+    .settings-content {
+      display: none;
+      width: 100%;
+      left: 100%;
+      right: -100%;
+      margin-left: 15px; } }
+  .settings-content img {
+    max-width: 100%; }
+  .settings-content.active {
+    display: block; }
+  .settings-content > header {
+    position: relative;
+    z-index: 200;
+    height: 17px;
+    padding: 30px 220px 29px 40px;
+    border-bottom: #edece4 1px solid;
+    margin-bottom: 40px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: inherit;
+    color: inherit;
+    background: -moz-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(25%, white), color-stop(100%, rgba(255, 255, 255, 0.9)));
+    background: -webkit-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
+    background: -o-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
+    background: -ms-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear, to bottom, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%; }
+    @media (max-width: 1000px) {
+      .settings-content > header {
+        padding-left: 15px; } }
+    @media (max-width: 800px) {
+      .settings-content > header {
+        padding-left: 115px; } }
+    @media (max-height: 600px), (max-height: 600px) {
+      .settings-content > header {
+        height: auto;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: transparent; }
+        .settings-content > header .title {
+          display: none; } }
+    @media (max-width: 650px) {
+      .settings-content > header {
+        padding-left: 15px; }
+        .settings-content > header .button-back {
+          position: fixed;
+          top: 5px;
+          left: 14px;
+          min-height: 0;
+          height: 30px; }
+          .settings-content > header .button-back:before {
+            left: -9px;
+            border-width: 15px 9px 15px 0; } }
+  .settings-content .page-actions {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 700;
+    font-size: 1em; }
+    @media (max-width: 1000px) {
+      .settings-content .page-actions {
+        right: 15px; } }
+    @media (max-width: 650px) {
+      .settings-content .page-actions {
+        position: fixed;
+        top: 5px;
+        right: 4px; }
+        .settings-content .page-actions button {
+          min-height: 0;
+          height: 30px;
+          padding: 0.5em 1.37em; } }
+    .settings-content .page-actions .button-add {
+      position: relative;
+      padding-left: 50px; }
+      .settings-content .page-actions .button-add:before {
+        font-family: "Icons";
+        font-weight: normal;
+        font-style: normal;
+        vertical-align: -7%;
+        text-transform: none;
+        speak: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        content: "\e032";
+        font-size: 1.4em;
+        color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        top: 0;
+        padding: 9px 8px 0 0;
+        left: 9px;
+        bottom: 0;
+        width: 20px;
+        border-right: #8ba644 1px solid; }
+      .settings-content .page-actions .button-add:hover {
+        text-decoration: none; }
+  .settings-content .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+    .settings-content .content:before {
+      display: block;
+      content: "";
+      height: 77px; }
+      @media (max-height: 600px), (max-height: 600px) {
+        .settings-content .content:before {
+          display: none; } }
+    .settings-content .content.no-padding {
+      padding: 0; }
+    @media (max-width: 1000px) {
+      .settings-content .content {
+        padding-left: 15px; } }
+    @media (max-width: 550px) {
+      .settings-content .content {
+        padding: 0 15px 40px; } }
+  .settings-content .description-container, .settings-content .bio-container {
+    max-width: 370px; }
+  .settings-content .word-count {
+    margin-right: 30px;
+    float: right;
+    font-weight: bold;
+    color: #9e9d95; }
+
+/* =============================================================================
+   Code Injection
+   ============================================================================= */
+.header-injection,
+.footer-injection {
+  margin-top: 3.2em; }
 
 .settings {
   /* =============================================================================
