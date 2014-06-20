@@ -1903,7 +1903,6 @@ input[type='checkbox']:active + .checkbox:after {
   overflow-x: auto;
   overflow-y: scroll;
   z-index: 1040;
-  pointer-events: none;
   -webkit-transition: all 0.15s linear 0s;
   -moz-transition: all 0.15s linear 0s;
   transition: all 0.15s linear 0s;
