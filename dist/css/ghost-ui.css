@@ -2295,7 +2295,7 @@ input[type='checkbox']:active + .checkbox:after {
 .notification, .notification-success, .notification-error, .notification-warn, .notification-info {
   width: 100%;
   min-height: 40px;
-  padding: 10px 43px 10px 57px;
+  max-height: 253px;
   margin: 0 0 15px 0;
   color: rgba(255, 255, 255, 0.9);
   background: #5ba4e5;
@@ -2330,8 +2330,12 @@ input[type='checkbox']:active + .checkbox:after {
   @media (max-width: 400px) {
     .notification, .notification-success, .notification-error, .notification-warn, .notification-info {
       margin-bottom: 1px; } }
+  .notification .notification-message, .notification-success .notification-message, .notification-error .notification-message, .notification-warn .notification-message, .notification-info .notification-message {
+    display: block;
+    padding: 10px 43px 10px 57px;
+    max-height: 253px;
+    overflow: auto; }
   .notification .close, .notification-success .close, .notification-error .close, .notification-warn .close, .notification-info .close {
-    display: inline-block;
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer; }
     .notification .close:after, .notification-success .close:after, .notification-error .close:after, .notification-warn .close:after, .notification-info .close:after {
