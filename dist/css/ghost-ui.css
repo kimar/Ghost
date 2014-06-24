@@ -5411,7 +5411,8 @@ body.zen {
     float: right; }
     .settings .user-search label {
       margin: 0; }
-    .settings .user-search:hover .user-search-input, .settings .user-search .user-search-input:focus {
+    .settings .user-search:hover .user-search-input,
+    .settings .user-search .user-search-input:focus {
       width: 260px;
       padding: 0 10px; }
     .settings .user-search .user-search-input {
@@ -5541,11 +5542,17 @@ body.zen {
     z-index: 1; }
     .settings .user-profile fieldset {
       padding: 0 40px; }
-  .settings fieldset.user-details-top {
-    margin-bottom: 0;
-    padding: 10px 0 0 0; }
-    .settings fieldset.user-details-top p {
-      color: #fff; }
+    .settings .user-profile textarea {
+      min-width: 240px; }
+  @media (max-width: 500px) {
+    .settings fieldset.user-details-top {
+      margin-bottom: 10px; } }
+  @media (min-width: 501px) {
+    .settings fieldset.user-details-top {
+      margin-bottom: 0;
+      padding: 10px 0 0 0; }
+      .settings fieldset.user-details-top p {
+        color: #fff; } }
   .settings .user-image {
     display: block;
     position: relative;
@@ -5560,6 +5567,9 @@ body.zen {
     border: 5px solid #fff;
     background: #fff;
     z-index: 2; }
+    @media (max-width: 500px) {
+      .settings .user-image {
+        margin-left: -10px; } }
     .settings .user-image .img {
       display: block;
       width: 110px;
@@ -5585,8 +5595,9 @@ body.zen {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  .settings #user-name {
-    border-color: #fff; }
+  @media (min-width: 501px) {
+    .settings #user-name {
+      border-color: #fff; } }
   .settings .user-details-bottom {
     padding: 0 40px;
     margin: -30px 0 0 0; }
