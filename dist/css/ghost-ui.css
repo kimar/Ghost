@@ -5145,7 +5145,8 @@ body.zen {
       right: -100%;
       margin-left: 15px; } }
   .settings-content img {
-    max-width: 100%; }
+    max-width: 100%;
+    max-height: 400px; }
   .settings-content.active {
     display: block; }
   .settings-content > header {
@@ -5501,7 +5502,9 @@ body.zen {
     .settings .user-role.editor {
       background-color: #4A8CBD; }
   .settings .user-profile-header {
-    position: relative; }
+    position: relative;
+    max-height: 400px;
+    overflow: hidden; }
     .settings .user-profile-header:after {
       content: "";
       position: absolute;
