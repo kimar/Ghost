@@ -55,6 +55,8 @@ Example:
 
 > Short and descriptive example bug report title
 >
+> [screenshot of the issue]
+>
 > A summary of the issue and the browser/OS environment in which it occurs. If
 > suitable, include the steps required to reproduce the bug.
 >
@@ -77,8 +79,8 @@ fits with the scope and aims of the project. It's up to *you* to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
-Don't be pissed if your idea isn't accepted. As much as we would love to, we 
-can't say yes to everything! Open Source means you can use your change in a 
+Don't be pissed if your idea isn't accepted. As much as we would love to, we
+can't say yes to everything! Open Source means you can use your change in a
 fork, no matter what happens.
 
 
@@ -145,7 +147,7 @@ included in the project:
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `master` branch.
+    with a clear title and description against the `master` branch. If you are making visual changes - include a before/after screenshot to make it easy to understand and review.
 
 
 ## Code guidelines
@@ -185,7 +187,7 @@ Run `grunt test` before committing to ensure your changes follow our coding stan
 
 ## Contributor License Agreement
 
-By contributing your code to Ghost you grant the Ghost Foundation a non-exclusive, irrevocable, worldwide, royalty-free, sublicenseable, transferable license under all of Your relevant intellectual property rights (including copyright, patent, and any other rights), to use, copy, prepare derivative works of, distribute and publicly perform and display the Contributions on any licensing terms, including without limitation: (a) open source licenses like the MIT license; and (b) binary, proprietary, or commercial licenses. Except for the 
+By contributing your code to Ghost you grant the Ghost Foundation a non-exclusive, irrevocable, worldwide, royalty-free, sublicenseable, transferable license under all of Your relevant intellectual property rights (including copyright, patent, and any other rights), to use, copy, prepare derivative works of, distribute and publicly perform and display the Contributions on any licensing terms, including without limitation: (a) open source licenses like the MIT license; and (b) binary, proprietary, or commercial licenses. Except for the
 licenses granted herein, You reserve all right, title, and interest in and to the Contribution.
 
 You confirm that you are able to grant us these rights. You represent that You are legally entitled to grant the above license. If Your employer has rights to intellectual property that You create, You represent that You have received permission to make the Contributions on behalf of that employer, or that Your employer has waived such rights for the Contributions.
