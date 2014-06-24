@@ -1007,6 +1007,7 @@ main {
   Buttons
   ========================================================================== */
 .button,
+button,
 input[type="button"], .button-save,
 button[type="submit"],
 input[type="submit"], .button-add, .button-delete,
@@ -1032,62 +1033,53 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   -moz-transition: background 0.3s ease, border-color 0.3s ease;
   transition: background 0.3s ease, border-color 0.3s ease; }
   .button:hover,
+  button:hover,
   input[type="button"]:hover, .button-save:hover,
-  button[type="submit"]:hover,
   input[type="submit"]:hover, .button-add:hover, .button-delete:hover,
-  button[type="reset"]:hover,
   input[type="reset"]:hover, .button-alt:hover, .button-info:hover, .button-link:hover, .button-back:hover, .hover.button,
+  button.hover,
   input.hover[type="button"], .hover.button-save,
-  button.hover[type="submit"],
   input.hover[type="submit"], .hover.button-add, .hover.button-delete,
-  button.hover[type="reset"],
   input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back {
     will-change: border-color, background;
     border-color: transparent;
     background: #f8f8f8;
     text-decoration: none; }
   .button:active,
+  button:active,
   input[type="button"]:active, .button-save:active,
-  button[type="submit"]:active,
   input[type="submit"]:active, .button-add:active, .button-delete:active,
-  button[type="reset"]:active,
   input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active, .active.button,
+  button.active,
   input.active[type="button"], .active.button-save,
-  button.active[type="submit"],
   input.active[type="submit"], .active.button-add, .active.button-delete,
-  button.active[type="reset"],
   input.active[type="reset"], .active.button-alt, .active.button-info, .active.button-link, .active.button-back {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px inset; }
   .button:disabled,
+  button:disabled,
   input[type="button"]:disabled, .button-save:disabled,
-  button[type="submit"]:disabled,
   input[type="submit"]:disabled, .button-add:disabled, .button-delete:disabled,
-  button[type="reset"]:disabled,
   input[type="reset"]:disabled, .button-alt:disabled, .button-info:disabled, .button-link:disabled, .button-back:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
+    opacity: 0.5; }
   .large.button,
+  button.large,
   input.large[type="button"], .large.button-save,
-  button.large[type="submit"],
   input.large[type="submit"], .large.button-add, .large.button-delete,
-  button.large[type="reset"],
   input.large[type="reset"], .large.button-alt, .large.button-info, .large.button-link, .large.button-back {
     padding: 1em 1.8em;
     font-size: 14px;
     line-height: 16px; }
   [class*='icon-'].button,
+  button[class*='icon-'],
   input[class*='icon-'][type="button"], [class*='icon-'].button-save,
-  button[class*='icon-'][type="submit"],
   input[class*='icon-'][type="submit"], [class*='icon-'].button-add, [class*='icon-'].button-delete,
-  button[class*='icon-'][type="reset"],
   input[class*='icon-'][type="reset"], [class*='icon-'].button-alt, [class*='icon-'].button-info, [class*='icon-'].button-link, [class*='icon-'].button-back {
     position: relative;
     padding-left: calc(1.37em + 36px); }
     [class*='icon-'].button:before,
+    button[class*='icon-']:before,
     input[class*='icon-'][type="button"]:before, [class*='icon-'].button-save:before,
-    button[class*='icon-'][type="submit"]:before,
     input[class*='icon-'][type="submit"]:before, [class*='icon-'].button-add:before, [class*='icon-'].button-delete:before,
-    button[class*='icon-'][type="reset"]:before,
     input[class*='icon-'][type="reset"]:before, [class*='icon-'].button-alt:before, [class*='icon-'].button-info:before, [class*='icon-'].button-link:before, [class*='icon-'].button-back:before {
       position: absolute;
       top: 0;
@@ -1099,34 +1091,29 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
       border-right: 1px solid rgba(36, 38, 40, 0.1);
       opacity: 0.95; }
     [class*='icon-'].large.button,
+    button[class*='icon-'].large,
     input[class*='icon-'].large[type="button"], [class*='icon-'].large.button-save,
-    button[class*='icon-'].large[type="submit"],
     input[class*='icon-'].large[type="submit"], [class*='icon-'].large.button-add, [class*='icon-'].large.button-delete,
-    button[class*='icon-'].large[type="reset"],
     input[class*='icon-'].large[type="reset"], [class*='icon-'].large.button-alt, [class*='icon-'].large.button-info, [class*='icon-'].large.button-link, [class*='icon-'].large.button-back {
       padding-left: calc(1.8em + 46px); }
       [class*='icon-'].large.button:before,
+      button[class*='icon-'].large:before,
       input[class*='icon-'].large[type="button"]:before, [class*='icon-'].large.button-save:before,
-      button[class*='icon-'].large[type="submit"]:before,
       input[class*='icon-'].large[type="submit"]:before, [class*='icon-'].large.button-add:before, [class*='icon-'].large.button-delete:before,
-      button[class*='icon-'].large[type="reset"]:before,
       input[class*='icon-'].large[type="reset"]:before, [class*='icon-'].large.button-alt:before, [class*='icon-'].large.button-info:before, [class*='icon-'].large.button-link:before, [class*='icon-'].large.button-back:before {
         width: 46px;
         line-height: 46px;
         font-size: 17px; }
 
-button {
-  border: 0;
-  padding: 0;
-  background: transparent; }
-
 .button,
+button,
 input[type="button"] {
   color: #777;
   font-weight: normal;
   background: #eee;
   box-shadow: none; }
   .button:hover,
+  button:hover,
   input[type="button"]:hover {
     border-color: rgba(0, 0, 0, 0.1); }
 
