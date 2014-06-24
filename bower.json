@@ -20,7 +20,6 @@
     "CONTRIBUTING.md"
   ],
   "dependencies": {
-    "normalize-scss": "~3.0.0",
-    "breakpoint-sass": "2.4.1"
+    "normalize-scss": "~3.0.1"
   }
 }

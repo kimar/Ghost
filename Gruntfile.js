@@ -41,6 +41,7 @@ module.exports = function (grunt) {
                 cwd: './dist',
                 src: [
                     '{css,js}/*.min.*',
+                    '{css,js}/*.*',
                     'css/*.map',
                     'fonts/*'
                 ],
@@ -67,7 +68,8 @@ module.exports = function (grunt) {
                     require: ['bourbon']
                 },
                 files: {
-                    'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
+                    'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss',
+                    'docs/dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
                 }
             }
         },
