@@ -5139,7 +5139,7 @@ body.zen {
       left: 100%;
       right: -100%;
       margin-left: 15px; } }
-  .settings-content img {
+  .settings-content .settings-general img {
     max-width: 100%;
     max-height: 400px; }
   .settings-content.active {
