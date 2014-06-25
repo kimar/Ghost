@@ -1230,6 +1230,7 @@ input[type="reset"] {
     color: #fff;
     background: #e5e5e5;
     border-radius: 0 2px 2px 0;
+    border-left: 0;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 0 inset, rgba(0, 0, 0, 0.02) -1px 0 0 inset, rgba(0, 0, 0, 0.02) 0 -1px 0 inset;
     -webkit-transition: background-color 0.3s linear;
     -moz-transition: background-color 0.3s linear;
@@ -4352,8 +4353,7 @@ body.zen {
     width: 30px;
     min-height: 30px;
     height: 30px;
-    margin-top: 5px;
-    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 inset; }
+    margin-top: 5px; }
   #publish-bar .splitbutton-save .button-save,
   #publish-bar .splitbutton-save .button-delete,
   #publish-bar .splitbutton-delete .button-save,
