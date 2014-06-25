@@ -3944,8 +3944,8 @@ nav li a {
     top: 35px;
     right: -3px; }
   .manage .content-preview .post-edit {
-    margin-right: 7px;
-    padding: 5px; }
+    margin-right: 2px;
+    padding: 0 10px; }
     .manage .content-preview .post-edit:before {
       font-family: "Icons";
       font-weight: normal;
