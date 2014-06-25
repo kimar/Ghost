@@ -4400,7 +4400,7 @@ body.zen {
     content: "";
     position: fixed;
     top: 10px;
-    right: 270px;
+    right: 220px;
     width: 20px;
     height: 26px;
     background-color: rgba(26, 28, 29, 0);
@@ -4410,14 +4410,14 @@ body.zen {
     pointer-events: none; }
     @media (max-width: 400px) {
       #entry-tags:after {
-        right: 161px; } }
+        right: 165px; } }
   #entry-tags .tags {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     width: auto;
     max-width: 80%;
-    max-width: calc(100% - 320px);
+    max-width: calc(100% - 250px);
     height: 22px;
     padding-left: 5px;
     padding-bottom: 20px;
