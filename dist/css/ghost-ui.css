@@ -4034,7 +4034,8 @@ nav li a {
 .editor .entry-preview {
   right: 0;
   border-left: #edece4 2px solid; }
-.editor .entry-markdown, .editor .entry-preview {
+.editor .entry-markdown,
+.editor .entry-preview {
   width: 50%;
   padding: 15px;
   position: absolute;
@@ -4043,10 +4044,12 @@ nav li a {
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px; }
   @media (max-width: 400px) {
-    .editor .entry-markdown, .editor .entry-preview {
+    .editor .entry-markdown,
+    .editor .entry-preview {
       box-shadow: none; } }
   @media (max-width: 1000px) {
-    .editor .entry-markdown, .editor .entry-preview {
+    .editor .entry-markdown,
+    .editor .entry-preview {
       top: 109px;
       left: 0;
       right: 0;
@@ -4054,11 +4057,14 @@ nav li a {
       border: none;
       z-index: 100;
       min-height: 380px; }
-      .editor .entry-markdown .markdown, .editor .entry-markdown .entry-preview-content, .editor .entry-preview .markdown, .editor .entry-preview .entry-preview-content {
+      .editor .entry-markdown .markdown, .editor .entry-markdown .entry-preview-content,
+      .editor .entry-preview .markdown,
+      .editor .entry-preview .entry-preview-content {
         height: 50px;
         overflow: hidden; } }
   @media (max-width: 1000px) {
-    .editor .entry-markdown .floatingheader, .editor .entry-preview .floatingheader {
+    .editor .entry-markdown .floatingheader,
+    .editor .entry-preview .floatingheader {
       cursor: pointer;
       width: 50%;
       border-right: #edece4 2px solid;
@@ -4069,60 +4075,37 @@ nav li a {
       top: -40px;
       left: 0;
       box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 3px inset; }
-      .editor .entry-markdown .floatingheader a, .editor .entry-preview .floatingheader a {
+      .editor .entry-markdown .floatingheader a,
+      .editor .entry-preview .floatingheader a {
         color: #fff; } }
-  .editor .entry-markdown .floatingheader a, .editor .entry-preview .floatingheader a {
+  .editor .entry-markdown .floatingheader a,
+  .editor .entry-preview .floatingheader a {
     color: #aaa9a2; }
-  .editor .entry-markdown .floatingheader .markdown-help, .editor .entry-preview .floatingheader .markdown-help {
-    position: relative;
-    top: -5px;
-    right: -5px;
-    float: right;
-    padding: 5px; }
-    .editor .entry-markdown .floatingheader .markdown-help:before, .editor .entry-preview .floatingheader .markdown-help:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e018";
-      color: #cfceca; }
-    .editor .entry-markdown .floatingheader .markdown-help:hover, .editor .entry-preview .floatingheader .markdown-help:hover {
-      text-decoration: none; }
-    .editor .entry-markdown .floatingheader .markdown-help:hover:before, .editor .entry-preview .floatingheader .markdown-help:hover:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e018";
-      color: #aaa9a2; }
-    .editor .entry-markdown .floatingheader .markdown-help:hover:hover, .editor .entry-preview .floatingheader .markdown-help:hover:hover {
-      text-decoration: none; }
-  .editor .entry-markdown .floatingheader .entry-word-count, .editor .entry-preview .floatingheader .entry-word-count {
+  .editor .entry-markdown .floatingheader .entry-word-count,
+  .editor .entry-preview .floatingheader .entry-word-count {
     float: right; }
-  .editor .entry-markdown.active, .editor .entry-preview.active {
+  .editor .entry-markdown.active,
+  .editor .entry-preview.active {
     z-index: 200; }
-  .editor .entry-markdown.active .markdown, .editor .entry-markdown.active .entry-preview-content, .editor .entry-preview.active .markdown, .editor .entry-preview.active .entry-preview-content {
+  .editor .entry-markdown.active .markdown, .editor .entry-markdown.active .entry-preview-content,
+  .editor .entry-preview.active .markdown,
+  .editor .entry-preview.active .entry-preview-content {
     height: auto;
     overflow: auto; }
   @media (max-width: 1000px) {
-    .editor .entry-markdown.active header, .editor .entry-preview.active header {
+    .editor .entry-markdown.active header,
+    .editor .entry-preview.active header {
       cursor: auto;
       color: #aaa9a2;
       background: #fff;
       box-shadow: none; }
-      .editor .entry-markdown.active header a, .editor .entry-preview.active header a {
+      .editor .entry-markdown.active header a,
+      .editor .entry-preview.active header a {
         color: #aaa9a2; } }
   @media (max-width: 400px) {
     .editor .entry-markdown .markdown-help,
-    .editor .entry-markdown .entry-word-count, .editor .entry-preview .markdown-help,
+    .editor .entry-markdown .entry-word-count,
+    .editor .entry-preview .markdown-help,
     .editor .entry-preview .entry-word-count {
       display: none; } }
 .editor .entry-markdown-content textarea {
@@ -4230,6 +4213,39 @@ nav li a {
   .editor .scrolling .CodeMirror-scroll,
   .editor .scrolling .entry-preview-content {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05) inset; } }
+
+.markdown-help {
+  position: relative;
+  top: -5px;
+  right: -5px;
+  float: right;
+  padding: 5px; }
+  .markdown-help:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e018";
+    color: #cfceca; }
+  .markdown-help:hover {
+    text-decoration: none; }
+  .markdown-help:hover:before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e018";
+    color: #aaa9a2; }
+  .markdown-help:hover:hover {
+    text-decoration: none; }
 
 /* =============================================================================
    Post Preview Content
