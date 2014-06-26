@@ -1018,7 +1018,9 @@ main {
 button,
 input[type="button"], .button-save,
 button[type="submit"],
-input[type="submit"], .button-add, .button-delete,
+input[type="submit"], .button-add,
+button[type="submit"].button-add,
+input[type="submit"].button-add, .button-delete,
 button[type="reset"],
 input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   min-height: 35px;
@@ -1043,11 +1045,13 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   .button:hover,
   button:hover,
   input[type="button"]:hover, .button-save:hover,
-  input[type="submit"]:hover, .button-add:hover, .button-delete:hover,
+  input[type="submit"]:hover, .button-add:hover,
+  button[type="submit"].button-add:hover, .button-delete:hover,
   input[type="reset"]:hover, .button-alt:hover, .button-info:hover, .button-link:hover, .button-back:hover, .hover.button,
   button.hover,
   input.hover[type="button"], .hover.button-save,
-  input.hover[type="submit"], .hover.button-add, .hover.button-delete,
+  input.hover[type="submit"], .hover.button-add,
+  button.hover[type="submit"].button-add, .hover.button-delete,
   input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back {
     will-change: border-color, background;
     border-color: transparent;
@@ -1056,23 +1060,27 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   .button:active,
   button:active,
   input[type="button"]:active, .button-save:active,
-  input[type="submit"]:active, .button-add:active, .button-delete:active,
+  input[type="submit"]:active, .button-add:active,
+  button[type="submit"].button-add:active, .button-delete:active,
   input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active, .active.button,
   button.active,
   input.active[type="button"], .active.button-save,
-  input.active[type="submit"], .active.button-add, .active.button-delete,
+  input.active[type="submit"], .active.button-add,
+  button.active[type="submit"].button-add, .active.button-delete,
   input.active[type="reset"], .active.button-alt, .active.button-info, .active.button-link, .active.button-back {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px inset; }
   .button:disabled,
   button:disabled,
   input[type="button"]:disabled, .button-save:disabled,
-  input[type="submit"]:disabled, .button-add:disabled, .button-delete:disabled,
+  input[type="submit"]:disabled, .button-add:disabled,
+  button[type="submit"].button-add:disabled, .button-delete:disabled,
   input[type="reset"]:disabled, .button-alt:disabled, .button-info:disabled, .button-link:disabled, .button-back:disabled {
     opacity: 0.5; }
   .large.button,
   button.large,
   input.large[type="button"], .large.button-save,
-  input.large[type="submit"], .large.button-add, .large.button-delete,
+  input.large[type="submit"], .large.button-add,
+  button.large[type="submit"].button-add, .large.button-delete,
   input.large[type="reset"], .large.button-alt, .large.button-info, .large.button-link, .large.button-back {
     padding: 1em 1.8em;
     font-size: 14px;
@@ -1080,7 +1088,8 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   [class*='icon-'].button,
   button[class*='icon-'],
   input[class*='icon-'][type="button"], [class*='icon-'].button-save,
-  input[class*='icon-'][type="submit"], [class*='icon-'].button-add, [class*='icon-'].button-delete,
+  input[class*='icon-'][type="submit"], [class*='icon-'].button-add,
+  button[class*='icon-'][type="submit"].button-add, [class*='icon-'].button-delete,
   input[class*='icon-'][type="reset"], [class*='icon-'].button-alt, [class*='icon-'].button-info, [class*='icon-'].button-link, [class*='icon-'].button-back {
     position: relative;
     padding-left: calc(1.37em + 36px); }
@@ -1135,9 +1144,13 @@ input[type="submit"] {
   input[type="submit"]:hover {
     background: #2f8cde; }
 
-.button-add {
+.button-add,
+button[type="submit"].button-add,
+input[type="submit"].button-add {
   background: #9fbb58; }
-  .button-add:hover {
+  .button-add:hover,
+  button[type="submit"].button-add:hover,
+  input[type="submit"].button-add:hover {
     background: #8ba644; }
 
 .button-delete,
@@ -4808,12 +4821,8 @@ body.zen {
 
 .CodeMirror div.CodeMirror-cursor {
   position: absolute;
-  visibility: hidden;
   border-right: none;
   width: 0; }
-
-.CodeMirror-focused div.CodeMirror-cursor {
-  visibility: visible; }
 
 .CodeMirror-selected {
   background: #d9d9d9; }
