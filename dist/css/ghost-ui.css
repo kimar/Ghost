@@ -4819,6 +4819,9 @@ body.zen {
 .CodeMirror-measure pre {
   position: static; }
 
+.CodeMirror:not(.CodeMirror-focused) div.CodeMirror-cursor {
+  visibility: hidden; }
+
 .CodeMirror div.CodeMirror-cursor {
   position: absolute;
   border-right: none;
