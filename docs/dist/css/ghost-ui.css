@@ -1022,7 +1022,7 @@ main {
   ========================================================================== */
 .button,
 button,
-input[type="button"], .button-dark, .button-save,
+input[type="button"], .button-save,
 button[type="submit"],
 input[type="submit"], .button-add,
 button[type="submit"].button-add,
@@ -1050,12 +1050,12 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   transition: background 0.3s ease, border-color 0.3s ease; }
   .button:hover,
   button:hover,
-  input[type="button"]:hover, .button-dark:hover, .button-save:hover,
+  input[type="button"]:hover, .button-save:hover,
   input[type="submit"]:hover, .button-add:hover,
   button[type="submit"].button-add:hover, .button-delete:hover,
   input[type="reset"]:hover, .button-alt:hover, .button-info:hover, .button-link:hover, .button-back:hover, .hover.button,
   button.hover,
-  input.hover[type="button"], .hover.button-dark, .hover.button-save,
+  input.hover[type="button"], .hover.button-save,
   input.hover[type="submit"], .hover.button-add,
   button.hover[type="submit"].button-add, .hover.button-delete,
   input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back {
@@ -1065,26 +1065,26 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
     text-decoration: none; }
   .button:active,
   button:active,
-  input[type="button"]:active, .button-dark:active, .button-save:active,
+  input[type="button"]:active, .button-save:active,
   input[type="submit"]:active, .button-add:active,
   button[type="submit"].button-add:active, .button-delete:active,
   input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active, .active.button,
   button.active,
-  input.active[type="button"], .active.button-dark, .active.button-save,
+  input.active[type="button"], .active.button-save,
   input.active[type="submit"], .active.button-add,
   button.active[type="submit"].button-add, .active.button-delete,
   input.active[type="reset"], .active.button-alt, .active.button-info, .active.button-link, .active.button-back {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px inset; }
   .button:disabled,
   button:disabled,
-  input[type="button"]:disabled, .button-dark:disabled, .button-save:disabled,
+  input[type="button"]:disabled, .button-save:disabled,
   input[type="submit"]:disabled, .button-add:disabled,
   button[type="submit"].button-add:disabled, .button-delete:disabled,
   input[type="reset"]:disabled, .button-alt:disabled, .button-info:disabled, .button-link:disabled, .button-back:disabled {
     opacity: 0.5; }
   .large.button,
   button.large,
-  input.large[type="button"], .large.button-dark, .large.button-save,
+  input.large[type="button"], .large.button-save,
   input.large[type="submit"], .large.button-add,
   button.large[type="submit"].button-add, .large.button-delete,
   input.large[type="reset"], .large.button-alt, .large.button-info, .large.button-link, .large.button-back {
@@ -1093,7 +1093,7 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
     line-height: 16px; }
   [class*='icon-'].button,
   button[class*='icon-'],
-  input[class*='icon-'][type="button"], [class*='icon-'].button-dark, [class*='icon-'].button-save,
+  input[class*='icon-'][type="button"], [class*='icon-'].button-save,
   input[class*='icon-'][type="submit"], [class*='icon-'].button-add,
   button[class*='icon-'][type="submit"].button-add, [class*='icon-'].button-delete,
   input[class*='icon-'][type="reset"], [class*='icon-'].button-alt, [class*='icon-'].button-info, [class*='icon-'].button-link, [class*='icon-'].button-back {
@@ -1101,7 +1101,7 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
     padding-left: calc(1.37em + 36px); }
     [class*='icon-'].button:before,
     button[class*='icon-']:before,
-    input[class*='icon-'][type="button"]:before, [class*='icon-'].button-dark:before, [class*='icon-'].button-save:before,
+    input[class*='icon-'][type="button"]:before, [class*='icon-'].button-save:before,
     input[class*='icon-'][type="submit"]:before, [class*='icon-'].button-add:before, [class*='icon-'].button-delete:before,
     input[class*='icon-'][type="reset"]:before, [class*='icon-'].button-alt:before, [class*='icon-'].button-info:before, [class*='icon-'].button-link:before, [class*='icon-'].button-back:before {
       position: absolute;
@@ -1115,13 +1115,13 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
       opacity: 0.95; }
     [class*='icon-'].large.button,
     button[class*='icon-'].large,
-    input[class*='icon-'].large[type="button"], [class*='icon-'].large.button-dark, [class*='icon-'].large.button-save,
+    input[class*='icon-'].large[type="button"], [class*='icon-'].large.button-save,
     input[class*='icon-'].large[type="submit"], [class*='icon-'].large.button-add, [class*='icon-'].large.button-delete,
     input[class*='icon-'].large[type="reset"], [class*='icon-'].large.button-alt, [class*='icon-'].large.button-info, [class*='icon-'].large.button-link, [class*='icon-'].large.button-back {
       padding-left: calc(1.8em + 46px); }
       [class*='icon-'].large.button:before,
       button[class*='icon-'].large:before,
-      input[class*='icon-'].large[type="button"]:before, [class*='icon-'].large.button-dark:before, [class*='icon-'].large.button-save:before,
+      input[class*='icon-'].large[type="button"]:before, [class*='icon-'].large.button-save:before,
       input[class*='icon-'].large[type="submit"]:before, [class*='icon-'].large.button-add:before, [class*='icon-'].large.button-delete:before,
       input[class*='icon-'].large[type="reset"]:before, [class*='icon-'].large.button-alt:before, [class*='icon-'].large.button-info:before, [class*='icon-'].large.button-link:before, [class*='icon-'].large.button-back:before {
         width: 46px;
@@ -1139,16 +1139,6 @@ input[type="button"] {
   button:hover,
   input[type="button"]:hover {
     border-color: rgba(0, 0, 0, 0.1); }
-
-.button-dark {
-  color: #fff;
-  font-weight: normal;
-  background: #A1ADB3;
-  box-shadow: none;
-  border-color: #A1ADB3; }
-  .button-dark:hover {
-    border-color: #85949c;
-    background: #85949c; }
 
 .button-save,
 button[type="submit"],
@@ -3707,19 +3697,21 @@ nav li a {
     min-width: 80px;
     box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset; }
 
-/*
- * About Ghost page
- *
- * Table of Contents
- *
- * Ghost Logo
- * Version, environment & support
- * Contributors
- * Credits & Copyright
- */
-/* ==========================================================================
-   Ghost Logo
-   ========================================================================== */
+.top-contributors {
+  padding-left: 0;
+  max-width: 650px; }
+  .top-contributors li {
+    float: left;
+    list-style: none;
+    margin-right: 9px;
+    margin-bottom: 9px; }
+    .top-contributors li a {
+      display: block; }
+      .top-contributors li a img {
+        width: 56px;
+        display: block;
+        border-radius: 100%; }
+
 .settings-about .ghost_logo:before {
   font-family: "Icons";
   font-weight: normal;
@@ -3731,9 +3723,7 @@ nav li a {
   -webkit-font-smoothing: antialiased;
   content: "\e000";
   font-size: 1.28rem;
-  color: #7d878a;
-  position: relative;
-  top: -6px; }
+  color: #7d878a; }
 .settings-about .ghost_logo:hover {
   text-decoration: none; }
 .settings-about .ghost_logo:after {
@@ -3746,111 +3736,13 @@ nav li a {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   content: "\e600";
-  font-size: 2.5rem;
-  color: #242628; }
+  font-size: 2rem;
+  color: #e25440; }
 .settings-about .ghost_logo:hover {
   text-decoration: none; }
-.settings-about p {
-  color: #7d878a; }
-
-/* ==========================================================================
-   Version, environment & support
-   ========================================================================== */
-.about-ghost-intro h1 {
-  margin-top: -6px;
-  margin-bottom: -21px; }
-  .about-ghost-intro h1 .version {
-    font-weight: 300;
-    font-size: 1.3rem;
-    position: relative;
-    top: -3px; }
-@media (max-width: 550px) {
-  .about-ghost-intro {
-    padding-top: 40px; } }
-
-.about-environment-help {
-  margin-top: 35px; }
-
-.about-environment p {
-  margin: 0;
-  line-height: 1.7; }
-
-.about-help {
-  padding-top: 6px; }
-  @media (max-width: 500px) {
-    .about-help {
-      padding-top: 16px; } }
-  .about-help .button-dark {
-    width: 100%;
-    display: block;
-    font-size: 0.85rem;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    min-height: 32px; }
-    .about-help .button-dark:nth-child(1) {
-      margin-bottom: 11px; }
-
-@media (min-width: 501px) {
-  .about-environment-help {
-    max-width: 430px; }
-
-  .about-environment {
-    float: left;
-    width: calc(100% - 196px); }
-
-  .about-help {
-    float: right;
-    width: 176px; } }
-/* ==========================================================================
-   Contributors
-   ========================================================================== */
-.top-contributors {
-  padding-left: 0;
-  max-width: 650px; }
-  .top-contributors li {
-    float: left;
-    list-style: none;
-    width: 10%; }
-    .top-contributors li a {
-      display: block; }
-      @media (min-width: 601px) {
-        .top-contributors li a {
-          margin-right: 9px;
-          margin-bottom: 9px; } }
-      @media (max-width: 600px) {
-        .top-contributors li a {
-          margin-right: 6px;
-          margin-bottom: 6px; } }
-      .top-contributors li a img {
-        width: 100%;
-        display: block;
-        border-radius: 100%; }
-
-/* ==========================================================================
-   Credits & Copyright
-   ========================================================================== */
-.about-credits {
-  margin-top: 48px; }
-  .about-credits h1 {
-    font-size: 1.85rem;
-    margin-bottom: 2rem; }
-
-.about-contributors-info {
-  margin-right: -0.9rem;
-  font-size: 1.2rem;
-  max-width: 620px; }
-
-.button-save.large.about-get-involved {
-  margin-top: -0.1rem;
-  font-size: 0.9rem; }
-
-.about-copyright {
-  margin-top: 4.9rem; }
-  .about-copyright a:link, .about-copyright a:visited {
-    color: inherit; }
-  .about-copyright a:hover, .about-copyright a:focus, .about-copyright a:active {
-    text-decoration: none;
-    color: #5ba4e5; }
+.settings-about .version {
+  font-weight: 300;
+  font-size: 1.3rem; }
 
 /*
  * Content screen styles
