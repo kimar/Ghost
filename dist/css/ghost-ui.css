@@ -4170,6 +4170,10 @@ nav li a {
   .editor .entry-markdown .floatingheader .entry-word-count,
   .editor .entry-preview .floatingheader .entry-word-count {
     float: right; }
+  @media (max-width: 1000px) {
+    .editor .entry-markdown:not(.active) .markdown-help:hover:before,
+    .editor .entry-preview:not(.active) .markdown-help:hover:before {
+      color: #fff; } }
   .editor .entry-markdown.active,
   .editor .entry-preview.active {
     z-index: 200; }
