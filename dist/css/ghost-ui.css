@@ -803,7 +803,7 @@ main {
    Icon Class Styles
    ========================================================================== */
 [class*=icon-]:before {
-  font-family: "Icons";
+  font-family: "GhostIcons";
   font-weight: normal;
   font-style: normal;
   vertical-align: -7%;
@@ -1127,6 +1127,18 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
         width: 46px;
         line-height: 46px;
         font-size: 17px; }
+
+[class*='button'][class*='has-icon'] {
+  padding-left: 0; }
+  [class*='button'][class*='has-icon'] [class*='icon-'] {
+    margin-left: 11px;
+    margin-right: 4px; }
+    [class*='button'][class*='has-icon'] [class*='icon-']:before {
+      font-size: 0.9rem; }
+[class*='button'].only-has-icon {
+  padding-right: 0; }
+  [class*='button'].only-has-icon [class*='icon-'] {
+    margin-right: 11px; }
 
 .button,
 button,
@@ -5169,6 +5181,8 @@ body.zen {
   padding: 0; }
   @media (max-width: 800px) {
     .settings .wrapper {
+      top: -55px;
+      margin-top: 55px;
       overflow-x: hidden; } }
 .settings .title {
   text-transform: uppercase;
@@ -5421,9 +5435,6 @@ body.zen {
     @media (max-width: 1000px) {
       .settings-content > header {
         padding-left: 15px; } }
-    @media (max-width: 800px) {
-      .settings-content > header {
-        padding-left: 115px; } }
     @media (max-height: 600px) {
       .settings-content > header {
         height: auto;
@@ -5443,10 +5454,18 @@ body.zen {
           top: 5px;
           left: 14px;
           min-height: 0;
-          height: 30px; }
+          height: 30px;
+          display: block; }
           .settings-content > header .button-back:before {
             left: -9px;
             border-width: 15px 9px 15px 0; } }
+    .settings-content > header .header-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      outline: 1px solid red; }
   .settings-content .page-actions {
     position: absolute;
     top: 20px;
@@ -5461,10 +5480,12 @@ body.zen {
         position: fixed;
         top: 5px;
         right: 4px; }
-        .settings-content .page-actions button {
+        .settings-content .page-actions .button-save {
           min-height: 0;
           height: 30px;
           padding: 0.5em 1.37em; } }
+    .settings-content .page-actions.page-actions-alt {
+      left: 40px; }
     .settings-content .page-actions .button-add {
       position: relative;
       padding-left: 50px; }
@@ -5521,6 +5542,13 @@ body.zen {
     float: right;
     font-weight: bold;
     color: #9e9d95; }
+  @media (max-width: 550px) {
+    .settings-content textarea {
+      max-width: 100%; }
+      .settings-content textarea + p {
+        max-width: 100%; }
+        .settings-content textarea + p .word-count {
+          margin-right: 0; } }
 
 /* =============================================================================
    Code Injection
@@ -5743,6 +5771,14 @@ body.zen {
       line-height: 1em; }
     .settings .user .user-last-seen {
       line-height: 1em; }
+  .settings .user-actions-cog {
+    margin-right: 6px; }
+  .settings .user-actions-menu {
+    top: 49px;
+    right: 69px;
+    width: 145px; }
+    .settings .user-actions-menu .delete:hover {
+      background: #e25440; }
   .settings .user-role {
     padding: 2px 8px;
     float: right;
@@ -5775,8 +5811,8 @@ body.zen {
     min-height: 180px; }
   .settings .edit-cover-image {
     position: absolute;
-    right: 40px;
-    bottom: 38px;
+    right: 35px;
+    bottom: 32px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 0;
     color: rgba(255, 255, 255, 0.8);
@@ -5791,44 +5827,49 @@ body.zen {
     .settings .edit-cover-image:hover {
       color: #fff;
       background: rgba(0, 0, 0, 0.5); }
+  .settings .user-image + .form-group {
+    margin-top: 155px; }
+    @media (min-width: 551px) {
+      .settings .user-image + .form-group {
+        margin-top: 43px; } }
   .settings .user-profile {
     position: relative;
-    top: -100px;
+    top: -110px;
     z-index: 1; }
     .settings .user-profile fieldset {
       padding: 0 40px; }
     .settings .user-profile textarea {
       min-width: 240px; }
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     .settings fieldset.user-details-top {
       margin-bottom: 10px; } }
-  @media (min-width: 501px) {
+  @media (min-width: 551px) {
     .settings fieldset.user-details-top {
       margin-bottom: 0;
-      padding: 10px 0 0 0; }
+      padding: 0; }
       .settings fieldset.user-details-top p {
         color: #fff; } }
   .settings .user-image {
     display: block;
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 126px;
+    height: 126px;
     float: left;
-    margin-left: 40px;
+    margin-left: 34px;
     margin-right: 20px;
     text-align: center;
     border-radius: 100%;
     overflow: hidden;
-    border: 5px solid #fff;
+    padding: 3px;
     background: #fff;
     z-index: 2; }
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       .settings .user-image {
         margin-left: -10px; } }
     .settings .user-image .img {
       display: block;
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       background-size: cover;
       background-position: center center;
       border-radius: 100%; }
@@ -5836,23 +5877,52 @@ body.zen {
       opacity: 1; }
   .settings .edit-user-image {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     color: #fff;
-    line-height: 105px;
+    line-height: 120px;
     text-transform: uppercase;
     text-decoration: none;
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  @media (min-width: 501px) {
+  @media (min-width: 551px) {
+    .settings label[for='user-name'] {
+      visibility: hidden; }
     .settings #user-name {
-      border-color: #fff; } }
+      border-color: #fff;
+      font-size: 1.5rem;
+      padding: 3px 12px; } }
   .settings .user-details-bottom {
     padding: 0 40px;
     margin: -30px 0 0 0; }
+
+@media (max-width: 800px) {
+  .users-back {
+    display: none; } }
+@media (max-width: 650px) {
+  .page-actions .user-actions-cog {
+    padding: 7px 0;
+    min-height: 30px; }
+    .page-actions .user-actions-cog .icon-settings {
+      margin-left: 8px;
+      margin-right: 8px; }
+
+  .settings .user-actions-menu {
+    top: 43px;
+    right: 66px; }
+
+  .settings-content .user-settings-header {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0; }
+
+  .user-settings-header .title,
+  .settings-content .settings-user:before {
+    display: none; } }
