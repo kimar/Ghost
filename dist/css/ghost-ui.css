@@ -780,7 +780,7 @@ main {
    @font-face rule
    ========================================================================== */
 @font-face {
-  font-family: 'Icons';
+  font-family: 'GhostIcons';
   src: url("../fonts/icons.eot");
   src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
@@ -1265,7 +1265,7 @@ input[type="reset"] {
     -moz-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear; }
     .splitbutton .options:before, .splitbutton-save .options:before, .splitbutton-add .options:before, .splitbutton-delete .options:before, .splitbutton-alt .options:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -1315,7 +1315,7 @@ input[type="reset"] {
       box-shadow: none;
       background: #f8f8f8; }
       .splitbutton .options:hover:before, .splitbutton-save .options:hover:before, .splitbutton-add .options:hover:before, .splitbutton-delete .options:hover:before, .splitbutton-alt .options:hover:before {
-        font-family: "Icons";
+        font-family: "GhostIcons";
         font-weight: normal;
         font-style: normal;
         vertical-align: -7%;
@@ -1333,7 +1333,7 @@ input[type="reset"] {
       .splitbutton .options:hover:hover, .splitbutton-save .options:hover:hover, .splitbutton-add .options:hover:hover, .splitbutton-delete .options:hover:hover, .splitbutton-alt .options:hover:hover {
         text-decoration: none; }
     .splitbutton .options.up:hover:before, .splitbutton-save .options.up:hover:before, .splitbutton-add .options.up:hover:before, .splitbutton-delete .options.up:hover:before, .splitbutton-alt .options.up:hover:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -2036,7 +2036,7 @@ input[type='checkbox']:active + .checkbox:after {
     -moz-transition: opacity 0.3s linear;
     transition: opacity 0.3s linear; }
     .modal-content .close:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -2088,13 +2088,12 @@ input[type='checkbox']:active + .checkbox:after {
  * Dropdown Show & Hide
  * Menu
  * Menu Positioning Options
- * Post Settings
  */
 /* ==========================================================================
   Dropdowns
   ========================================================================== */
 .dropdown:after {
-  font-family: "Icons";
+  font-family: "GhostIcons";
   font-weight: normal;
   font-style: normal;
   vertical-align: -7%;
@@ -2111,7 +2110,7 @@ input[type='checkbox']:active + .checkbox:after {
 .dropdown.active {
   color: #242628; }
   .dropdown.active:after {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2190,7 +2189,7 @@ button.dropdown {
       box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset; }
   .menu .active a:before, .menu-drop .active a:before, .menu-drop-left .active a:before, .menu-drop-right .active a:before, .menu-left .active a:before, .menu-right .active a:before, #publish-bar .splitbutton-save .editor-options .active a:before,
   #publish-bar .splitbutton-delete .editor-options .active a:before, .suggestions .active a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2225,105 +2224,6 @@ button.dropdown {
   left: auto;
   right: 10px;
   margin-left: 0; }
-
-/* ==========================================================================
-   Post Settings
-   ---
-   There classes are used on conjunction with the above classes
-   ========================================================================== */
-.post-settings {
-  display: inline-block;
-  padding: 0 10px;
-  color: #7d878a;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s;
-  position: relative;
-  top: 1px;
-  cursor: pointer; }
-  .post-settings:before {
-    font-family: "Icons";
-    font-weight: normal;
-    font-style: normal;
-    vertical-align: -7%;
-    text-transform: none;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    content: "\e006";
-    font-size: 14px; }
-  .post-settings:hover {
-    text-decoration: none; }
-  .post-settings:hover, .post-settings.active {
-    color: #242628; }
-
-.post-settings-menu {
-  padding-top: 0;
-  text-transform: none; }
-  .post-settings-menu table {
-    margin: 0; }
-  .post-settings-menu td {
-    padding: 0;
-    border-top: none;
-    border-bottom: #414648 1px solid; }
-  .post-settings-menu .post-setting-label {
-    padding: 8px 10px 8px 15px;
-    border-right: #414648 1px solid;
-    text-align: right; }
-  .post-settings-menu .label, .post-settings-menu form label, form .post-settings-menu label {
-    position: static;
-    width: auto;
-    font-weight: normal;
-    color: #7d878a;
-    white-space: nowrap; }
-  .post-settings-menu input {
-    width: 200px;
-    margin: 0; }
-    @media (max-width: 550px) {
-      .post-settings-menu input {
-        width: 200px; } }
-    .post-settings-menu input[type="text"] {
-      border: none;
-      padding: 8px 0 8px 10px;
-      color: #e2edf2;
-      border-radius: 0;
-      background: transparent; }
-      .post-settings-menu input[type="text"]:focus {
-        background: #35393b;
-        border: none; }
-  .post-settings-menu .post-setting-item {
-    padding: 5px 0 0 10px; }
-  .post-settings-menu .checkbox {
-    position: relative;
-    margin-top: 0;
-    top: 0;
-    border: 0; }
-    .post-settings-menu .checkbox:after {
-      border-color: #4d5356;
-      background: #35393b; }
-  .post-settings-menu input[type='checkbox']:focus + .checkbox:after {
-    border-color: #4d5356; }
-  .post-settings-menu .delete {
-    display: block;
-    padding: 10px 15px;
-    cursor: pointer; }
-    .post-settings-menu .delete:before {
-      font-family: "Icons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e023";
-      position: relative;
-      top: -1px;
-      margin-right: 10px; }
-    .post-settings-menu .delete:hover {
-      text-decoration: none; }
-    .post-settings-menu .delete:hover {
-      background: #e25440; }
 
 /*
  * Button classes, including
@@ -2373,7 +2273,7 @@ button.dropdown {
   -o-transform: translateZ(0);
   transform: translateZ(0); }
   .notification:before, .notification-success:before, .notification-error:before, .notification-warn:before, .notification-info:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2405,7 +2305,7 @@ button.dropdown {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer; }
     .notification .close:after, .notification-success .close:after, .notification-error .close:after, .notification-warn .close:after, .notification-info .close:after {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -2429,7 +2329,7 @@ button.dropdown {
 .notification-success {
   background: #9fbb58; }
   .notification-success:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2461,7 +2361,7 @@ button.dropdown {
 .notification-error {
   background: #e25440; }
   .notification-error:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2476,7 +2376,7 @@ button.dropdown {
 .notification-warn {
   background: #f2a925; }
   .notification-warn:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2491,7 +2391,7 @@ button.dropdown {
 .notification-info {
   background: #5ba4e5; }
   .notification-info:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2689,7 +2589,7 @@ button.dropdown {
   .image-uploader .description {
     margin-top: 10px; }
   .image-uploader .media:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2725,7 +2625,7 @@ button.dropdown {
     .image-uploader .image-upload:hover {
       cursor: pointer; }
   .image-uploader .image-webcam:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2738,7 +2638,7 @@ button.dropdown {
   .image-uploader .image-webcam:hover {
     text-decoration: none; }
   .image-uploader .image-url:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2751,7 +2651,7 @@ button.dropdown {
   .image-uploader .image-url:hover {
     text-decoration: none; }
   .image-uploader .image-upload:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2876,7 +2776,7 @@ button.dropdown {
     background: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px; }
     .pre-image-uploader .image-cancel:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -2915,7 +2815,7 @@ button.dropdown {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .ghost-logo:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -2997,7 +2897,7 @@ button.dropdown {
   .navbar nav a:before {
     margin-right: 5px; }
   .navbar nav .dashboard a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3010,7 +2910,7 @@ button.dropdown {
   .navbar nav .dashboard a:hover {
     text-decoration: none; }
   .navbar nav .content a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3022,7 +2922,7 @@ button.dropdown {
   .navbar nav .content a:hover {
     text-decoration: none; }
   .navbar nav .editor a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3034,7 +2934,7 @@ button.dropdown {
   .navbar nav .editor a:hover {
     text-decoration: none; }
   .navbar nav .settings a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3048,7 +2948,7 @@ button.dropdown {
   .navbar .subnav {
     position: relative; }
     .navbar .subnav > a:after {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3115,7 +3015,7 @@ button.dropdown {
     right: 0;
     left: auto; }
   .usermenu.subnav .usermenu-profile a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3127,7 +3027,7 @@ button.dropdown {
   .usermenu.subnav .usermenu-profile a:hover {
     text-decoration: none; }
   .usermenu.subnav .usermenu-help a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3140,7 +3040,7 @@ button.dropdown {
   .usermenu.subnav .usermenu-help a:hover {
     text-decoration: none; }
   .usermenu.subnav .usermenu-shortcuts a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3152,7 +3052,7 @@ button.dropdown {
   .usermenu.subnav .usermenu-shortcuts a:hover {
     text-decoration: none; }
   .usermenu.subnav .usermenu-signout a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3177,7 +3077,7 @@ button.dropdown {
     -moz-transition: margin-left 0.3s ease 0s;
     transition: margin-left 0.3s ease 0s; }
     #global-header .ghost-logo:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3514,7 +3414,7 @@ nav li a {
     margin-right: 3px;
     border-radius: 2px 0 0 2px; }
     .login-form .email-wrap:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3541,7 +3441,7 @@ nav li a {
     position: relative;
     border-radius: 0 2px 2px 0; }
     .login-form .password-wrap:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3721,7 +3621,7 @@ nav li a {
    Ghost Logo
    ========================================================================== */
 .settings-about .ghost_logo:before {
-  font-family: "Icons";
+  font-family: "GhostIcons";
   font-weight: normal;
   font-style: normal;
   vertical-align: -7%;
@@ -3737,7 +3637,7 @@ nav li a {
 .settings-about .ghost_logo:hover {
   text-decoration: none; }
 .settings-about .ghost_logo:after {
-  font-family: "Icons";
+  font-family: "GhostIcons";
   font-weight: normal;
   font-style: normal;
   vertical-align: -7%;
@@ -3903,7 +3803,7 @@ nav li a {
     padding: 3px 4px 3px 5px;
     min-height: 0; }
     .manage .content-list .button-add:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3932,7 +3832,7 @@ nav li a {
     text-align: right;
     margin-left: 15px; }
     .manage .content-list .views:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -3949,7 +3849,7 @@ nav li a {
       .manage .content-list .views {
         float: none; } }
   .manage .content-list .featured .status:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -3988,7 +3888,7 @@ nav li a {
           .manage .content-list ol li a {
             padding-right: 40px; } }
         .manage .content-list ol li a:after {
-          font-family: "Icons";
+          font-family: "GhostIcons";
           font-weight: normal;
           font-style: normal;
           vertical-align: -7%;
@@ -4026,7 +3926,7 @@ nav li a {
           color: #242628;
           font-weight: normal; }
           .manage .content-list ol li.active .views:before {
-            font-family: "Icons";
+            font-family: "GhostIcons";
             font-weight: normal;
             font-style: normal;
             vertical-align: -7%;
@@ -4065,7 +3965,7 @@ nav li a {
     margin: 0 7px 0 -5px;
     padding: 5px; }
     .manage .content-preview .unfeatured:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -4082,7 +3982,7 @@ nav li a {
     margin: 0 7px 0 -5px;
     padding: 5px; }
     .manage .content-preview .featured:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -4121,7 +4021,7 @@ nav li a {
     margin-right: 2px;
     padding: 0 10px; }
     .manage .content-preview .post-edit:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -4395,7 +4295,7 @@ nav li a {
   float: right;
   padding: 5px; }
   .markdown-help:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -4408,7 +4308,7 @@ nav li a {
   .markdown-help:hover {
     text-decoration: none; }
   .markdown-help:hover:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -4632,7 +4532,7 @@ body.zen {
     -moz-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
     #entry-tags .tag-label:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -4672,7 +4572,7 @@ body.zen {
     -ms-user-select: none;
     user-select: none; }
     #entry-tags .tag:after {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -4694,7 +4594,7 @@ body.zen {
     #entry-tags .tag:hover {
       cursor: pointer; }
       #entry-tags .tag:hover:after {
-        font-family: "Icons";
+        font-family: "GhostIcons";
         font-weight: normal;
         font-style: normal;
         vertical-align: -7%;
@@ -5091,6 +4991,162 @@ body.zen {
   font-weight: bold; }
 
 /*
+ * Post Settings Menu
+ *
+ * Table of Contents
+ *
+ * Post Settings Menu
+ */
+/* ==========================================================================
+  Post Settings Menu
+  ========================================================================== */
+.post-settings {
+  display: inline-block;
+  padding: 0 10px;
+  color: #7d878a;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  position: relative;
+  top: 1px;
+  cursor: pointer; }
+  .post-settings:before {
+    font-family: "GhostIcons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e006";
+    font-size: 14px; }
+  .post-settings:hover {
+    text-decoration: none; }
+  .post-settings:hover, .post-settings.active {
+    color: #242628; }
+
+.post-settings-menu {
+  padding-top: 0;
+  text-transform: none; }
+  .post-settings-menu table {
+    margin: 0; }
+  .post-settings-menu td {
+    padding: 0;
+    border-top: none;
+    border-bottom: #414648 1px solid; }
+  .post-settings-menu .post-setting-label {
+    padding: 8px 10px 8px 15px;
+    border-right: #414648 1px solid;
+    text-align: right; }
+  .post-settings-menu .label, .post-settings-menu form label, form .post-settings-menu label {
+    position: static;
+    width: auto;
+    font-weight: normal;
+    color: #7d878a;
+    white-space: nowrap; }
+  .post-settings-menu input {
+    width: 200px;
+    margin: 0; }
+    @media (max-width: 550px) {
+      .post-settings-menu input {
+        width: 200px; } }
+    .post-settings-menu input[type="text"] {
+      border: none;
+      padding: 8px 0 8px 10px;
+      color: #e2edf2;
+      border-radius: 0;
+      background: transparent; }
+      .post-settings-menu input[type="text"]:focus {
+        background: #35393b;
+        border: none; }
+  .post-settings-menu .post-setting-item {
+    padding: 5px 0 0 10px; }
+    .post-settings-menu .post-setting-item.no-padding {
+      padding: 0; }
+  .post-settings-menu .author-select-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 36px;
+    width: 100%; }
+    .post-settings-menu .author-select-wrapper:before {
+      content: attr(data-select-text);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-size: 1.1em;
+      color: #e2edf2;
+      line-height: 36px;
+      text-indent: 10px; }
+    .post-settings-menu .author-select-wrapper:after {
+      font-family: "GhostIcons";
+      font-weight: normal;
+      font-style: normal;
+      vertical-align: -7%;
+      text-transform: none;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      content: "\e001";
+      font-size: 0.85em;
+      color: #e2edf2;
+      position: absolute;
+      top: 50%;
+      right: 0.8em;
+      position: absolute;
+      margin-top: -0.425em; }
+    .post-settings-menu .author-select-wrapper:hover {
+      text-decoration: none; }
+    .post-settings-menu .author-select-wrapper select {
+      opacity: 0;
+      width: 100%;
+      margin-bottom: 0;
+      height: 36px; }
+    .post-settings-menu .author-select-wrapper:hover {
+      background: #35393b; }
+    @media (max-width: 550px) {
+      .post-settings-menu .author-select-wrapper, .post-settings-menu .author-select-wrapper:before,
+      .post-settings-menu .author-select-wrapper select {
+        height: 41px; }
+      .post-settings-menu .author-select-wrapper:before {
+        line-height: 41px; } }
+  .post-settings-menu .checkbox {
+    position: relative;
+    margin-top: 0;
+    top: 0;
+    border: 0; }
+    .post-settings-menu .checkbox:after {
+      border-color: #4d5356;
+      background: #35393b; }
+  .post-settings-menu input[type='checkbox']:focus + .checkbox:after {
+    border-color: #4d5356; }
+  .post-settings-menu .select-wrapper {
+    width: calc(100% - 10px); }
+  .post-settings-menu .delete {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer; }
+    .post-settings-menu .delete:before {
+      font-family: "GhostIcons";
+      font-weight: normal;
+      font-style: normal;
+      vertical-align: -7%;
+      text-transform: none;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      content: "\e023";
+      position: relative;
+      top: -1px;
+      margin-right: 10px; }
+    .post-settings-menu .delete:hover {
+      text-decoration: none; }
+    .post-settings-menu .delete:hover {
+      background: #e25440; }
+
+/*
  * Setting pages styles
  *
  * Table of Contents
@@ -5188,7 +5244,7 @@ body.zen {
           padding-left: 15px; } }
       @media (max-width: 800px) {
         .settings-menu li a:after {
-          font-family: "Icons";
+          font-family: "GhostIcons";
           font-weight: normal;
           font-style: normal;
           vertical-align: -7%;
@@ -5225,7 +5281,7 @@ body.zen {
       .settings-menu li a:before {
         margin-right: 15px; } }
   .settings-menu .about a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5237,7 +5293,7 @@ body.zen {
   .settings-menu .about a:hover {
     text-decoration: none; }
   .settings-menu .general a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5249,7 +5305,7 @@ body.zen {
   .settings-menu .general a:hover {
     text-decoration: none; }
   .settings-menu .publishing a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5261,7 +5317,7 @@ body.zen {
   .settings-menu .publishing a:hover {
     text-decoration: none; }
   .settings-menu .services a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5273,7 +5329,7 @@ body.zen {
   .settings-menu .services a:hover {
     text-decoration: none; }
   .settings-menu .users a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5285,7 +5341,7 @@ body.zen {
   .settings-menu .users a:hover {
     text-decoration: none; }
   .settings-menu .appearance a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5297,7 +5353,7 @@ body.zen {
   .settings-menu .appearance a:hover {
     text-decoration: none; }
   .settings-menu .apps a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5309,7 +5365,7 @@ body.zen {
   .settings-menu .apps a:hover {
     text-decoration: none; }
   .settings-menu .code a:before {
-    font-family: "Icons";
+    font-family: "GhostIcons";
     font-weight: normal;
     font-style: normal;
     vertical-align: -7%;
@@ -5413,7 +5469,7 @@ body.zen {
       position: relative;
       padding-left: 50px; }
       .settings-content .page-actions .button-add:before {
-        font-family: "Icons";
+        font-family: "GhostIcons";
         font-weight: normal;
         font-style: normal;
         vertical-align: -7%;
@@ -5622,7 +5678,7 @@ body.zen {
       transition: width 0.2s ease-in-out;
       box-shadow: none; }
     .settings .user-search .search-icon:before {
-      font-family: "Icons";
+      font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
       vertical-align: -7%;
@@ -5659,7 +5715,7 @@ body.zen {
         padding-top: 8px;
         text-align: center; }
         .settings .user .user-image.invite:before {
-          font-family: "Icons";
+          font-family: "GhostIcons";
           font-weight: normal;
           font-style: normal;
           vertical-align: -7%;
