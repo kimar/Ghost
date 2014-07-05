@@ -2469,7 +2469,7 @@ button.dropdown {
   min-height: 68px; }
   .object-list-item:hover {
     background: #f7f7f3; }
-  .object-list-item:last-child:hover {
+  .object-list-item:last-of-type:hover {
     box-shadow: inset 0px -1px 0px #edece4; }
 
 .object-list-item-icon {
@@ -2530,6 +2530,9 @@ button.dropdown {
 
 .object-list-item-aside .object-list-action + .object-list-action {
   margin-left: 20px; }
+.object-list-item-aside .role-label {
+  float: left;
+  margin-top: -1px; }
 .object-list-item-aside .role-label + .role-label {
   margin-left: 5px; }
 
@@ -5524,7 +5527,7 @@ body.zen {
         padding: 9px 8px 0 0;
         left: 9px;
         bottom: 0;
-        width: 20px;
+        width: 26px;
         border-right: #8ba644 1px solid; }
       .settings-content .page-actions .button-add:hover {
         text-decoration: none; }
