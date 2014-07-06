@@ -1068,12 +1068,7 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   input[type="button"]:active, .button-dark:active, .button-save:active,
   input[type="submit"]:active, .button-add:active,
   button[type="submit"].button-add:active, .button-delete:active,
-  input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active, .active.button,
-  button.active,
-  input.active[type="button"], .active.button-dark, .active.button-save,
-  input.active[type="submit"], .active.button-add,
-  button.active[type="submit"].button-add, .active.button-delete,
-  input.active[type="reset"], .active.button-alt, .active.button-info, .active.button-link, .active.button-back {
+  input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px inset; }
   .button:disabled,
   button:disabled,
@@ -2467,6 +2462,9 @@ button.dropdown {
     background: #f7f7f3; }
   .object-list-item:last-of-type:hover {
     box-shadow: inset 0px -1px 0px #edece4; }
+
+a.object-list-item {
+  text-decoration: none; }
 
 .object-list-item-icon {
   width: 35px;
