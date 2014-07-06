@@ -2029,24 +2029,20 @@ input[type='checkbox']:active + .checkbox:after {
 
 .modal-content {
   position: relative;
-  padding: 20px;
+  padding: 18px;
   background-clip: padding-box;
   background-color: #FFFFFF;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 6px; }
   .modal-content .close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 19px;
+    right: 19px;
     width: 16px;
-    min-height: 16px;
     padding: 0;
     margin: 0;
     border: none;
-    z-index: 9999;
-    -webkit-transition: opacity 0.3s linear;
-    -moz-transition: opacity 0.3s linear;
-    transition: opacity 0.3s linear; }
+    z-index: 9999; }
     .modal-content .close:before {
       font-family: "GhostIcons";
       font-weight: normal;
@@ -2056,27 +2052,27 @@ input[type='checkbox']:active + .checkbox:after {
       speak: none;
       line-height: 1;
       -webkit-font-smoothing: antialiased;
-      content: "\e034";
-      font-size: 1em;
-      color: #7d878a; }
+      content: "\e01c";
+      font-size: 1.4rem;
+      color: #7d878a;
+      -webkit-transition: color 0.3s linear;
+      -moz-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
     .modal-content .close:hover {
       text-decoration: none; }
-    .modal-content .close:hover {
-      color: #242628; }
+    .modal-content .close:hover:before {
+      color: #35393b; }
 
 .modal-header {
-  position: relative;
-  padding: 20px;
-  border-bottom: 1px solid #edece4; }
+  position: relative; }
   .modal-header h1 {
     display: inline-block;
     margin: 0;
-    font-size: 1.5em;
-    font-weight: bold; }
+    font-size: 1.85em;
+    font-weight: 100; }
 
 .modal-body {
   position: relative;
-  min-height: 100px;
   overflow-y: auto; }
 
 .modal-footer {
@@ -5022,6 +5018,33 @@ body.zen {
 
 .error-stack-function {
   font-weight: bold; }
+
+.invite-new-user .modal-body:after {
+  content: "";
+  display: table;
+  clear: both; }
+.invite-new-user .form-group {
+  margin-bottom: 0;
+  padding: 0; }
+  .invite-new-user .form-group label {
+    position: static;
+    display: block;
+    text-align: left; }
+  .invite-new-user .form-group:nth-of-type(1) {
+    float: left;
+    width: 60%; }
+  .invite-new-user .form-group:nth-of-type(2) {
+    float: right;
+    width: 35%; }
+  .invite-new-user .form-group input,
+  .invite-new-user .form-group select {
+    margin-top: 1px;
+    width: 100%; }
+.invite-new-user .button-add {
+  width: 100%;
+  padding: 0.85rem 1.9rem;
+  font-size: 14px;
+  line-height: 16px; }
 
 /*
  * Post Settings Menu
