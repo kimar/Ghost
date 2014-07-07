@@ -5130,6 +5130,8 @@ body.zen {
   content: "";
   display: table;
   clear: both; }
+.invite-new-user .modal-body fieldset {
+  margin: 1em 0 0 0; }
 .invite-new-user .form-group {
   margin-bottom: 0;
   padding: 0; }
