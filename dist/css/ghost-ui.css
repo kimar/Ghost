@@ -1937,6 +1937,25 @@ input[type='radio']:focus + .gh-radio:after {
     color: #242628;
     line-height: 35px;
     pointer-events: none; }
+  .gh-select:after {
+    font-family: "GhostIcons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e001";
+    font-size: 0.85em;
+    color: #c0bfb6;
+    position: absolute;
+    top: 50%;
+    right: 0.8em;
+    position: absolute;
+    margin-top: -0.5em; }
+  .gh-select:hover {
+    text-decoration: none; }
   .gh-select select {
     opacity: 0;
     position: absolute;
