@@ -585,13 +585,13 @@ body {
 /* ==========================================================================
    Box
    ========================================================================== */
-.box, .editor .entry-title {
+.box, .entry-container .entry-title {
   padding: 15px;
   margin-bottom: 15px;
   background: #fff;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px; }
-  .box header, .editor .entry-title header {
+  .box header, .entry-container .entry-title header {
     height: 14px;
     border-bottom: 1px solid #edece4;
     padding-bottom: 15px;
@@ -599,7 +599,7 @@ body {
     text-transform: uppercase;
     font-size: 0.85em;
     color: #aaa9a2; }
-  .box footer, .editor .entry-title footer {
+  .box footer, .entry-container .entry-title footer {
     height: 14px;
     border-top: 1px solid #edece4;
     padding-top: 10px;
@@ -607,13 +607,13 @@ body {
     text-transform: uppercase;
     font-size: 0.85em;
     color: #aaa9a2; }
-  .box header a, .editor .entry-title header a,
+  .box header a, .entry-container .entry-title header a,
   .box footer a,
-  .editor .entry-title footer a {
+  .entry-container .entry-title footer a {
     color: #aaa9a2; }
-    .box header a:hover, .editor .entry-title header a:hover,
+    .box header a:hover, .entry-container .entry-title header a:hover,
     .box footer a:hover,
-    .editor .entry-title footer a:hover {
+    .entry-container .entry-title footer a:hover {
       color: #242628;
       text-decoration: none; }
 
@@ -4202,18 +4202,15 @@ nav li a {
 /* ==========================================================================
    Editor
    ========================================================================== */
-@media (min-width: 401px) {
-  .editor .notifications {
-    bottom: 40px; } }
-.editor .entry-title {
+.entry-container .entry-title {
   height: 57px;
   padding: 2px 15px;
   margin-bottom: 5px;
   position: relative; }
   @media (max-width: 400px) {
-    .editor .entry-title {
+    .entry-container .entry-title {
       box-shadow: none; } }
-  .editor .entry-title input {
+  .entry-container .entry-title input {
     border: 0;
     margin: 0;
     padding: 0;
@@ -4222,8 +4219,12 @@ nav li a {
     letter-spacing: -1px;
     width: 100%;
     background: transparent; }
-    .editor .entry-title input:focus {
+    .entry-container .entry-title input:focus {
       outline: 0; }
+
+@media (min-width: 401px) {
+  .editor .notifications {
+    bottom: 40px; } }
 .editor .entry-container {
   position: relative;
   height: 100%; }
