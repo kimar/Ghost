@@ -1782,6 +1782,13 @@ textarea,
   -moz-transition: border-color, 0.15s linear;
   transition: border-color, 0.15s linear; }
 
+textarea {
+  width: 100%;
+  max-width: 500px;
+  min-width: 250px;
+  height: auto;
+  min-height: 6.5em; }
+
 input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 textarea:focus {
   border-color: #aaa9a2;
