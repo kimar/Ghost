@@ -734,6 +734,15 @@ main {
   -webkit-animation: fade-in 0.5s;
   animation: fade-in 0.5s; }
 
+@-webkit-keyframes fade-in-snap {
+  to {
+    opacity: 1; } }
+@-moz-keyframes fade-in-snap {
+  to {
+    opacity: 1; } }
+@keyframes fade-in-snap {
+  to {
+    opacity: 1; } }
 /* ==========================================================================
    Fade Out
    TODO: Make the fadeIn keyframe name hyphenated, not camelCase
@@ -2473,9 +2482,9 @@ button.dropdown {
     -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .notification-success.notification-passive:hover {
-    -webkit-animation: fade-in 0.2s linear;
-    -moz-animation: fade-in 0.2s linear;
-    animation: fade-in 0.2s linear; }
+    -webkit-animation: fade-in-snap 0.2s linear;
+    -moz-animation: fade-in-snap 0.2s linear;
+    animation: fade-in-snap 0.2s linear; }
 
 .notification-error {
   background: #e25440; }
