@@ -2583,13 +2583,13 @@ button.dropdown {
   padding-right: 15px;
   border-top: 1px solid #edece4;
   min-height: 68px; }
-  .object-list-item:hover {
-    background: #f7f7f3; }
-  .object-list-item:last-of-type:hover {
-    box-shadow: inset 0px -1px 0px #edece4; }
 
 a.object-list-item {
   text-decoration: none; }
+  a.object-list-item:hover {
+    background: #f7f7f3; }
+  a.object-list-item:last-of-type:hover {
+    box-shadow: inset 0px -1px 0px #edece4; }
 
 .object-list-item-icon {
   width: 35px;
