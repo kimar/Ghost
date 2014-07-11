@@ -1969,7 +1969,8 @@ input[type='radio']:focus + .gh-radio:after {
     top: 50%;
     right: 0.8em;
     position: absolute;
-    margin-top: -0.5em; }
+    margin-top: -0.5em;
+    pointer-events: none; }
   .gh-select:hover {
     text-decoration: none; }
   .gh-select select {
@@ -5278,7 +5279,8 @@ body.zen {
       top: 50%;
       right: 0.8em;
       position: absolute;
-      margin-top: -0.425em; }
+      margin-top: -0.425em;
+      pointer-events: none; }
     .post-settings-menu .author-select-wrapper:hover {
       text-decoration: none; }
     .post-settings-menu .author-select-wrapper select {
