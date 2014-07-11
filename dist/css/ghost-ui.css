@@ -5969,7 +5969,9 @@ body.zen {
   .settings .edit-cover-image {
     position: absolute;
     right: 35px;
-    bottom: 32px;
+    bottom: 34px;
+    min-height: 34px;
+    height: 34px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 0;
     color: rgba(255, 255, 255, 0.8);
@@ -5985,30 +5987,45 @@ body.zen {
       color: #fff;
       background: rgba(0, 0, 0, 0.5); }
   .settings .user-image + .form-group {
-    margin-top: 155px; }
-    @media (min-width: 551px) {
+    margin-top: 155px;
+    max-width: 500px; }
+    @media (min-width: 651px) and (max-width: 1000px) {
       .settings .user-image + .form-group {
+        width: calc(100% - 201px); } }
+    @media (min-width: 651px) {
+      .settings .user-image + .form-group {
+        min-width: 285px;
         margin-top: 0;
         top: -110px;
         left: 40px; } }
+    @media (min-width: 1001px) {
+      .settings .user-image + .form-group {
+        width: calc(100% - 221px); } }
   .settings .user-profile {
     position: relative;
     top: -110px;
-    z-index: 1;
-    padding-left: 143px; }
+    z-index: 1; }
+    @media (min-width: 651px) {
+      .settings .user-profile {
+        padding-left: 143px; } }
     .settings .user-profile fieldset {
       padding: 0 40px; }
     .settings .user-profile textarea {
       min-width: 240px; }
-  @media (max-width: 550px) {
+  @media (max-width: 650px) {
     .settings fieldset.user-details-top {
       margin-bottom: 10px; } }
-  @media (min-width: 551px) {
+  @media (min-width: 651px) {
     .settings fieldset.user-details-top {
       margin-bottom: 0;
       padding: 0; }
       .settings fieldset.user-details-top p {
         color: #fff; } }
+  @media (max-width: 550px) {
+    .settings fieldset.user-details-top,
+    .settings fieldset.user-details-bottom {
+      padding-left: 15px;
+      padding-right: 15px; } }
   .settings .user-image {
     display: block;
     position: relative;
@@ -6026,7 +6043,10 @@ body.zen {
     margin-left: -104px; }
     @media (max-width: 550px) {
       .settings .user-image {
-        margin-left: -10px; } }
+        margin-left: 0px; } }
+    @media (min-width: 551px) and (max-width: 650px) {
+      .settings .user-image {
+        margin-left: 20px; } }
     .settings .user-image .img {
       display: block;
       width: 120px;
@@ -6052,7 +6072,7 @@ body.zen {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  @media (min-width: 551px) {
+  @media (min-width: 651px) {
     .settings label[for='user-name'] {
       visibility: hidden; }
     .settings #user-name {
@@ -6060,8 +6080,10 @@ body.zen {
       font-size: 1.5rem;
       padding: 3px 12px; } }
   .settings .user-details-bottom {
-    padding: 0 40px;
-    margin: -104px 0 0 0; }
+    padding: 0 40px; }
+    @media (min-width: 651px) {
+      .settings .user-details-bottom {
+        margin: -104px 0 0 0; } }
 
 @media (max-width: 800px) {
   .users-back {
