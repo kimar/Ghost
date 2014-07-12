@@ -5712,6 +5712,15 @@ body.zen {
         border-right: rgba(0, 0, 0, 0.07) 1px solid; }
       .settings-content .page-actions .button-add:hover {
         text-decoration: none; }
+      @media (max-width: 650px) {
+        .settings-content .page-actions .button-add {
+          height: 30px;
+          min-height: 30px;
+          padding: 7px 10px 7px 40px; }
+          .settings-content .page-actions .button-add:before {
+            padding-top: 7px;
+            left: 6px;
+            width: 24px; } }
   .settings-content .content {
     position: absolute;
     top: 0;
