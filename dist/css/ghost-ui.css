@@ -435,6 +435,7 @@ th {
  * Box Sizing
  * Text Selection
  * Colour Classes
+ * Focus Styles
  */
 /* ==========================================================================
    Box Sizing
@@ -535,6 +536,15 @@ th {
 
 .green {
   color: #9fbb58; }
+
+/* ==========================================================================
+   Focus Styles
+   ---
+   These are applied globally, to everything except images
+   ========================================================================== */
+*:not(img):focus {
+  outline: 0;
+  outline-width: 0; }
 
 /*
  * Generic layout classes, applying both structure and visual design
@@ -1067,7 +1077,12 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   input.hover[type="button"], .hover.button-dark, .hover.button-save,
   input.hover[type="submit"], .hover.button-add,
   button.hover[type="submit"].button-add, .hover.button-delete,
-  input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back {
+  input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back, .button:focus,
+  button:focus,
+  input[type="button"]:focus, .button-dark:focus, .button-save:focus,
+  input[type="submit"]:focus, .button-add:focus,
+  button[type="submit"].button-add:focus, .button-delete:focus,
+  input[type="reset"]:focus, .button-alt:focus, .button-info:focus, .button-link:focus, .button-back:focus {
     will-change: border-color, background;
     border-color: transparent;
     background: #f8f8f8;
@@ -1151,9 +1166,11 @@ input[type="button"] {
   font-weight: normal;
   background: #eee;
   box-shadow: none; }
-  .button:hover,
+  .button:hover, .button:focus,
   button:hover,
-  input[type="button"]:hover {
+  button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:focus {
     border-color: rgba(0, 0, 0, 0.1); }
 
 .button-dark {
@@ -1162,7 +1179,7 @@ input[type="button"] {
   background: #A1ADB3;
   box-shadow: none;
   border-color: #A1ADB3; }
-  .button-dark:hover {
+  .button-dark:hover, .button-dark:focus {
     border-color: #85949c;
     background: #85949c; }
 
@@ -1171,18 +1188,22 @@ button[type="submit"],
 input[type="submit"] {
   background: #5ba4e5;
   box-shadow: none; }
-  .button-save:hover,
+  .button-save:hover, .button-save:focus,
   button[type="submit"]:hover,
-  input[type="submit"]:hover {
+  button[type="submit"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
     background: #2f8cde; }
 
 .button-add,
 button[type="submit"].button-add,
 input[type="submit"].button-add {
   background: #9fbb58; }
-  .button-add:hover,
+  .button-add:hover, .button-add:focus,
   button[type="submit"].button-add:hover,
-  input[type="submit"].button-add:hover {
+  button[type="submit"].button-add:focus,
+  input[type="submit"].button-add:hover,
+  input[type="submit"].button-add:focus {
     background: #8ba644; }
 
 .button-delete,
@@ -1190,28 +1211,30 @@ button[type="reset"],
 input[type="reset"] {
   background: #e25440;
   box-shadow: none; }
-  .button-delete:hover,
+  .button-delete:hover, .button-delete:focus,
   button[type="reset"]:hover,
-  input[type="reset"]:hover {
+  button[type="reset"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
     background: #cf3520; }
 
 .button-alt {
   background: #3c4043; }
-  .button-alt:hover {
+  .button-alt:hover, .button-alt:focus {
     background: #242628; }
   .button-alt[class*='icon-']:before {
     border-right-color: #3c4043; }
 
 .button-info {
   background: #A1ADB3; }
-  .button-info:hover {
+  .button-info:hover, .button-info:focus {
     background: #bdc6ca; }
 
 .button-link {
   color: #5ba4e5;
   background: transparent;
   border: none; }
-  .button-link:hover {
+  .button-link:hover, .button-link:focus {
     background: transparent;
     text-decoration: underline; }
 
@@ -1245,11 +1268,11 @@ input[type="reset"] {
     -webkit-transition: border-color 0.3s ease;
     -moz-transition: border-color 0.3s ease;
     transition: border-color 0.3s ease; }
-  .button-back:hover {
+  .button-back:hover, .button-back:focus {
     color: #fff;
     background: #2f8cde;
     border-color: #2f8cde; }
-    .button-back:hover:before {
+    .button-back:hover:before, .button-back:focus:before {
       border-right-color: #2f8cde; }
 
 /* =============================================================================
@@ -1326,11 +1349,11 @@ input[type="reset"] {
       -ms-transform: rotate(540deg);
       -o-transform: rotate(540deg);
       transform: rotate(540deg); }
-    .splitbutton .options:hover, .splitbutton-save .options:hover, .splitbutton-add .options:hover, .splitbutton-delete .options:hover, .splitbutton-alt .options:hover {
+    .splitbutton .options:hover, .splitbutton-save .options:hover, .splitbutton-add .options:hover, .splitbutton-delete .options:hover, .splitbutton-alt .options:hover, .splitbutton .options:focus, .splitbutton-save .options:focus, .splitbutton-add .options:focus, .splitbutton-delete .options:focus, .splitbutton-alt .options:focus {
       will-change: box-shadow, background;
       box-shadow: none;
       background: #f8f8f8; }
-      .splitbutton .options:hover:before, .splitbutton-save .options:hover:before, .splitbutton-add .options:hover:before, .splitbutton-delete .options:hover:before, .splitbutton-alt .options:hover:before {
+      .splitbutton .options:hover:before, .splitbutton-save .options:hover:before, .splitbutton-add .options:hover:before, .splitbutton-delete .options:hover:before, .splitbutton-alt .options:hover:before, .splitbutton .options:focus:before, .splitbutton-save .options:focus:before, .splitbutton-add .options:focus:before, .splitbutton-delete .options:focus:before, .splitbutton-alt .options:focus:before {
         font-family: "GhostIcons";
         font-weight: normal;
         font-style: normal;
@@ -1346,9 +1369,9 @@ input[type="reset"] {
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); }
-      .splitbutton .options:hover:hover, .splitbutton-save .options:hover:hover, .splitbutton-add .options:hover:hover, .splitbutton-delete .options:hover:hover, .splitbutton-alt .options:hover:hover {
+      .splitbutton .options:hover:hover, .splitbutton-save .options:hover:hover, .splitbutton-add .options:hover:hover, .splitbutton-delete .options:hover:hover, .splitbutton-alt .options:hover:hover, .splitbutton .options:focus:hover, .splitbutton-save .options:focus:hover, .splitbutton-add .options:focus:hover, .splitbutton-delete .options:focus:hover, .splitbutton-alt .options:focus:hover {
         text-decoration: none; }
-    .splitbutton .options.up:hover:before, .splitbutton-save .options.up:hover:before, .splitbutton-add .options.up:hover:before, .splitbutton-delete .options.up:hover:before, .splitbutton-alt .options.up:hover:before {
+    .splitbutton .options.up:hover:before, .splitbutton-save .options.up:hover:before, .splitbutton-add .options.up:hover:before, .splitbutton-delete .options.up:hover:before, .splitbutton-alt .options.up:hover:before, .splitbutton .options.up:focus:before, .splitbutton-save .options.up:focus:before, .splitbutton-add .options.up:focus:before, .splitbutton-delete .options.up:focus:before, .splitbutton-alt .options.up:focus:before {
       font-family: "GhostIcons";
       font-weight: normal;
       font-style: normal;
@@ -1373,32 +1396,32 @@ input[type="reset"] {
       -webkit-transition-timing-function: ease;
       -moz-transition-timing-function: ease;
       transition-timing-function: ease; }
-    .splitbutton .options.up:hover:hover, .splitbutton-save .options.up:hover:hover, .splitbutton-add .options.up:hover:hover, .splitbutton-delete .options.up:hover:hover, .splitbutton-alt .options.up:hover:hover {
+    .splitbutton .options.up:hover:hover, .splitbutton-save .options.up:hover:hover, .splitbutton-add .options.up:hover:hover, .splitbutton-delete .options.up:hover:hover, .splitbutton-alt .options.up:hover:hover, .splitbutton .options.up:focus:hover, .splitbutton-save .options.up:focus:hover, .splitbutton-add .options.up:focus:hover, .splitbutton-delete .options.up:focus:hover, .splitbutton-alt .options.up:focus:hover {
       text-decoration: none; }
 
 .splitbutton .options {
   color: #777; }
-  .splitbutton .options:hover {
+  .splitbutton .options:hover, .splitbutton .options:focus {
     box-shadow: rgba(0, 0, 0, 0.07) 0 1px 0 inset, rgba(0, 0, 0, 0.07) -1px 0 0 inset, rgba(0, 0, 0, 0.07) 0 -1px 0 inset; }
 
 .splitbutton-save .options {
   background: #4598e2; }
-  .splitbutton-save .options:hover, .splitbutton-save .options.active {
+  .splitbutton-save .options:hover, .splitbutton-save .options.active, .splitbutton-save .options:focus {
     background: #2f8cde; }
 
 .splitbutton-add .options {
   background: #91ae47; }
-  .splitbutton-add .options:hover {
+  .splitbutton-add .options:hover, .splitbutton-add .options:focus {
     background: #8ba644; }
 
 .splitbutton-delete .options {
   background: #de3c25; }
-  .splitbutton-delete .options:hover {
+  .splitbutton-delete .options:hover, .splitbutton-delete .options:focus {
     background: #cf3520; }
 
 .splitbutton-alt .options {
   background: #2e3033; }
-  .splitbutton-alt .options:hover {
+  .splitbutton-alt .options:hover, .splitbutton-alt .options:focus {
     background: #242628; }
 
 /*
@@ -1786,6 +1809,10 @@ textarea,
   -webkit-transition: border-color, 0.15s linear;
   -moz-transition: border-color, 0.15s linear;
   transition: border-color, 0.15s linear; }
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  textarea:focus,
+  .gh-select:focus {
+    border-color: #aaa9a2; }
 
 textarea {
   width: 100%;
@@ -1793,12 +1820,6 @@ textarea {
   min-width: 250px;
   height: auto;
   min-height: 6.5em; }
-
-input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
-textarea:focus {
-  border-color: #aaa9a2;
-  outline: 0;
-  outline-width: 0; }
 
 @-moz-document url-prefix() {
   select {
@@ -2958,10 +2979,11 @@ a.object-list-item {
     line-height: 0; }
   .ghost-logo:hover {
     text-decoration: none; }
-  .ghost-logo:hover {
+  .ghost-logo:hover, .ghost-logo:focus {
     text-decoration: none; }
 
-.ghost-logo:hover {
+.ghost-logo:hover,
+.ghost-logo:focus {
   color: #e2edf2;
   background: #1f2123; }
 
@@ -2996,7 +3018,8 @@ a.object-list-item {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    .navbar nav li a:hover, .navbar nav li.active a {
+    .navbar nav li a:hover,
+    .navbar nav li a:focus, .navbar nav li.active a {
       color: #e2edf2;
       text-decoration: none;
       position: relative;
@@ -3113,7 +3136,7 @@ a.object-list-item {
       list-style: none; }
       .navbar .subnav li a {
         color: #e2edf2; }
-        .navbar .subnav li a:hover {
+        .navbar .subnav li a:hover, .navbar .subnav li a:focus {
           background: #0c0d0d;
           -webkit-transition: none;
           -moz-transition: none;
@@ -3250,7 +3273,8 @@ a.object-list-item {
     float: none;
     border-right: none;
     border-bottom: #35393b 1px solid; }
-    #global-header li a:hover, #global-header li.active a {
+    #global-header li a:hover,
+    #global-header li a:focus, #global-header li.active a {
       box-shadow: none; }
     #global-header li.active a:after {
       display: none; }
@@ -3287,7 +3311,7 @@ a.object-list-item {
       -webkit-transition: left 0.3s ease 0s;
       -moz-transition: left 0.3s ease 0s;
       transition: left 0.3s ease 0s; }
-    #global-header .usermenu > a:hover {
+    #global-header .usermenu > a:hover, #global-header .usermenu > a:focus {
       background: inherit; }
     #global-header .usermenu > a.active {
       background: #2e3133; }
@@ -3302,7 +3326,7 @@ a.object-list-item {
       border-bottom: #2e3133 1px solid; }
       #global-header .usermenu li a {
         background: #2e3133; }
-        #global-header .usermenu li a:hover {
+        #global-header .usermenu li a:hover, #global-header .usermenu li a:focus {
           background: #222426; }
         #global-header .usermenu li a:before {
           margin-right: 1em; }
@@ -3329,7 +3353,7 @@ nav li a {
   padding: 10px 15px;
   color: #aaa9a2;
   border-bottom: #edece4 1px solid; }
-  nav li a:hover {
+  nav li a:hover, nav li a:focus {
     color: #242628;
     background: #edece4;
     text-decoration: none; }
@@ -5456,7 +5480,9 @@ body.zen {
         .settings-menu li.active a {
           color: #242628;
           font-weight: bold;
-          background: #fff; } }
+          background: #fff; }
+          .settings-menu li.active a:focus {
+            background: #edece4; } }
   .settings-menu li a:before {
     margin-right: 20px; }
     @media (max-width: 1000px) {
