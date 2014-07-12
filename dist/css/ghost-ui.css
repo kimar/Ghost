@@ -5660,7 +5660,8 @@ body.zen {
       left: 40px; }
     .settings-content .page-actions .button-add {
       position: relative;
-      padding-left: 50px; }
+      padding-left: 50px;
+      border: rgba(0, 0, 0, 0.07) 1px solid; }
       .settings-content .page-actions .button-add:before {
         font-family: "GhostIcons";
         font-weight: normal;
@@ -5679,7 +5680,7 @@ body.zen {
         left: 9px;
         bottom: 0;
         width: 26px;
-        border-right: #8ba644 1px solid; }
+        border-right: rgba(0, 0, 0, 0.07) 1px solid; }
       .settings-content .page-actions .button-add:hover {
         text-decoration: none; }
   .settings-content .content {
