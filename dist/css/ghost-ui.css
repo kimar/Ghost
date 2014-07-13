@@ -5474,7 +5474,7 @@ body.zen {
       border-top: none; }
     .settings-menu li:first-child.active {
       border-top: none; }
-    @media (min-width: 1001px) {
+    @media (min-width: 801px) {
       .settings-menu li.active {
         margin-right: 0;
         position: relative;
