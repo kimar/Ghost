@@ -5602,8 +5602,7 @@ body.zen {
   right: 0;
   left: 20%;
   bottom: 0;
-  background: #fff;
-  display: none; }
+  background: #fff; }
   @media (max-width: 800px) {
     .settings-content {
       display: none;
@@ -5614,8 +5613,6 @@ body.zen {
   .settings-content .settings-general img {
     max-width: 100%;
     max-height: 400px; }
-  .settings-content.active {
-    display: block; }
   .settings-content > header {
     position: relative;
     z-index: 200;
