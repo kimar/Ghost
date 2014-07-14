@@ -1033,26 +1033,29 @@ main {
  *
  * Table of Contents
  *
+ * Button Reset
  * Buttons
  * Split Buttons
  */
 /* ==========================================================================
+  Button Reset
+  ========================================================================== */
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
+
+/* ==========================================================================
   Buttons
   ========================================================================== */
-.button,
-button,
-input[type="button"], .button-dark, .button-save,
-button[type="submit"],
-input[type="submit"], .button-add,
-button[type="submit"].button-add,
-input[type="submit"].button-add, .button-delete,
-button[type="reset"],
-input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
+.button, .modal-footer .reject-button-class, .button-dark, .button-save, .button-add, .button-delete, .button-alt, .button-info, .button-link, .button-back {
   min-height: 35px;
   width: auto;
   display: inline-block;
   padding: 0.9em 1.37em;
-  cursor: pointer;
   text-decoration: none;
   color: #fff;
   font-size: 11px;
@@ -1067,62 +1070,23 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   -webkit-transition: background 0.3s ease, border-color 0.3s ease;
   -moz-transition: background 0.3s ease, border-color 0.3s ease;
   transition: background 0.3s ease, border-color 0.3s ease; }
-  .button:hover,
-  button:hover,
-  input[type="button"]:hover, .button-dark:hover, .button-save:hover,
-  input[type="submit"]:hover, .button-add:hover,
-  button[type="submit"].button-add:hover, .button-delete:hover,
-  input[type="reset"]:hover, .button-alt:hover, .button-info:hover, .button-link:hover, .button-back:hover, .hover.button,
-  button.hover,
-  input.hover[type="button"], .hover.button-dark, .hover.button-save,
-  input.hover[type="submit"], .hover.button-add,
-  button.hover[type="submit"].button-add, .hover.button-delete,
-  input.hover[type="reset"], .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back, .button:focus,
-  button:focus,
-  input[type="button"]:focus, .button-dark:focus, .button-save:focus,
-  input[type="submit"]:focus, .button-add:focus,
-  button[type="submit"].button-add:focus, .button-delete:focus,
-  input[type="reset"]:focus, .button-alt:focus, .button-info:focus, .button-link:focus, .button-back:focus {
+  .button:hover, .modal-footer .reject-button-class:hover, .button-dark:hover, .button-save:hover, .button-add:hover, .button-delete:hover, .button-alt:hover, .button-info:hover, .button-link:hover, .button-back:hover, .hover.button, .modal-footer .hover.reject-button-class, .hover.button-dark, .hover.button-save, .hover.button-add, .hover.button-delete, .hover.button-alt, .hover.button-info, .hover.button-link, .hover.button-back, .button:focus, .modal-footer .reject-button-class:focus, .button-dark:focus, .button-save:focus, .button-add:focus, .button-delete:focus, .button-alt:focus, .button-info:focus, .button-link:focus, .button-back:focus {
     will-change: border-color, background;
     border-color: transparent;
     background: #f8f8f8;
     text-decoration: none; }
-  .button:active,
-  button:active,
-  input[type="button"]:active, .button-dark:active, .button-save:active,
-  input[type="submit"]:active, .button-add:active,
-  button[type="submit"].button-add:active, .button-delete:active,
-  input[type="reset"]:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active {
+  .button:active, .modal-footer .reject-button-class:active, .button-dark:active, .button-save:active, .button-add:active, .button-delete:active, .button-alt:active, .button-info:active, .button-link:active, .button-back:active {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px inset; }
-  .button:disabled,
-  button:disabled,
-  input[type="button"]:disabled, .button-dark:disabled, .button-save:disabled,
-  input[type="submit"]:disabled, .button-add:disabled,
-  button[type="submit"].button-add:disabled, .button-delete:disabled,
-  input[type="reset"]:disabled, .button-alt:disabled, .button-info:disabled, .button-link:disabled, .button-back:disabled {
+  .button:disabled, .modal-footer .reject-button-class:disabled, .button-dark:disabled, .button-save:disabled, .button-add:disabled, .button-delete:disabled, .button-alt:disabled, .button-info:disabled, .button-link:disabled, .button-back:disabled {
     opacity: 0.5; }
-  .large.button,
-  button.large,
-  input.large[type="button"], .large.button-dark, .large.button-save,
-  input.large[type="submit"], .large.button-add,
-  button.large[type="submit"].button-add, .large.button-delete,
-  input.large[type="reset"], .large.button-alt, .large.button-info, .large.button-link, .large.button-back {
+  .large.button, .modal-footer .large.reject-button-class, .large.button-dark, .large.button-save, .large.button-add, .large.button-delete, .large.button-alt, .large.button-info, .large.button-link, .large.button-back {
     padding: 1em 1.8em;
     font-size: 14px;
     line-height: 16px; }
-  [class*='icon-'].button,
-  button[class*='icon-'],
-  input[class*='icon-'][type="button"], [class*='icon-'].button-dark, [class*='icon-'].button-save,
-  input[class*='icon-'][type="submit"], [class*='icon-'].button-add,
-  button[class*='icon-'][type="submit"].button-add, [class*='icon-'].button-delete,
-  input[class*='icon-'][type="reset"], [class*='icon-'].button-alt, [class*='icon-'].button-info, [class*='icon-'].button-link, [class*='icon-'].button-back {
+  [class*='icon-'].button, .modal-footer [class*='icon-'].reject-button-class, [class*='icon-'].button-dark, [class*='icon-'].button-save, [class*='icon-'].button-add, [class*='icon-'].button-delete, [class*='icon-'].button-alt, [class*='icon-'].button-info, [class*='icon-'].button-link, [class*='icon-'].button-back {
     position: relative;
     padding-left: calc(1.37em + 36px); }
-    [class*='icon-'].button:before,
-    button[class*='icon-']:before,
-    input[class*='icon-'][type="button"]:before, [class*='icon-'].button-dark:before, [class*='icon-'].button-save:before,
-    input[class*='icon-'][type="submit"]:before, [class*='icon-'].button-add:before, [class*='icon-'].button-delete:before,
-    input[class*='icon-'][type="reset"]:before, [class*='icon-'].button-alt:before, [class*='icon-'].button-info:before, [class*='icon-'].button-link:before, [class*='icon-'].button-back:before {
+    [class*='icon-'].button:before, .modal-footer [class*='icon-'].reject-button-class:before, [class*='icon-'].button-dark:before, [class*='icon-'].button-save:before, [class*='icon-'].button-add:before, [class*='icon-'].button-delete:before, [class*='icon-'].button-alt:before, [class*='icon-'].button-info:before, [class*='icon-'].button-link:before, [class*='icon-'].button-back:before {
       position: absolute;
       top: 0;
       left: 0;
@@ -1132,17 +1096,9 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
       line-height: 35px;
       border-right: 1px solid rgba(36, 38, 40, 0.1);
       opacity: 0.95; }
-    [class*='icon-'].large.button,
-    button[class*='icon-'].large,
-    input[class*='icon-'].large[type="button"], [class*='icon-'].large.button-dark, [class*='icon-'].large.button-save,
-    input[class*='icon-'].large[type="submit"], [class*='icon-'].large.button-add, [class*='icon-'].large.button-delete,
-    input[class*='icon-'].large[type="reset"], [class*='icon-'].large.button-alt, [class*='icon-'].large.button-info, [class*='icon-'].large.button-link, [class*='icon-'].large.button-back {
+    [class*='icon-'].large.button, .modal-footer [class*='icon-'].large.reject-button-class, [class*='icon-'].large.button-dark, [class*='icon-'].large.button-save, [class*='icon-'].large.button-add, [class*='icon-'].large.button-delete, [class*='icon-'].large.button-alt, [class*='icon-'].large.button-info, [class*='icon-'].large.button-link, [class*='icon-'].large.button-back {
       padding-left: calc(1.8em + 46px); }
-      [class*='icon-'].large.button:before,
-      button[class*='icon-'].large:before,
-      input[class*='icon-'].large[type="button"]:before, [class*='icon-'].large.button-dark:before, [class*='icon-'].large.button-save:before,
-      input[class*='icon-'].large[type="submit"]:before, [class*='icon-'].large.button-add:before, [class*='icon-'].large.button-delete:before,
-      input[class*='icon-'].large[type="reset"]:before, [class*='icon-'].large.button-alt:before, [class*='icon-'].large.button-info:before, [class*='icon-'].large.button-link:before, [class*='icon-'].large.button-back:before {
+      [class*='icon-'].large.button:before, .modal-footer [class*='icon-'].large.reject-button-class:before, [class*='icon-'].large.button-dark:before, [class*='icon-'].large.button-save:before, [class*='icon-'].large.button-add:before, [class*='icon-'].large.button-delete:before, [class*='icon-'].large.button-alt:before, [class*='icon-'].large.button-info:before, [class*='icon-'].large.button-link:before, [class*='icon-'].large.button-back:before {
         width: 46px;
         line-height: 46px;
         font-size: 17px; }
@@ -1159,18 +1115,12 @@ input[type="reset"], .button-alt, .button-info, .button-link, .button-back {
   [class*='button'].only-has-icon [class*='icon-'] {
     margin-right: 11px; }
 
-.button,
-button,
-input[type="button"] {
+.button, .modal-footer .reject-button-class {
   color: #777;
   font-weight: normal;
   background: #eee;
   box-shadow: none; }
-  .button:hover, .button:focus,
-  button:hover,
-  button:focus,
-  input[type="button"]:hover,
-  input[type="button"]:focus {
+  .button:hover, .modal-footer .reject-button-class:hover, .button:focus, .modal-footer .reject-button-class:focus {
     border-color: rgba(0, 0, 0, 0.1); }
 
 .button-dark {
@@ -1183,39 +1133,21 @@ input[type="button"] {
     border-color: #85949c;
     background: #85949c; }
 
-.button-save,
-button[type="submit"],
-input[type="submit"] {
+.button-save {
   background: #5ba4e5;
   box-shadow: none; }
-  .button-save:hover, .button-save:focus,
-  button[type="submit"]:hover,
-  button[type="submit"]:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:focus {
+  .button-save:hover, .button-save:focus {
     background: #2f8cde; }
 
-.button-add,
-button[type="submit"].button-add,
-input[type="submit"].button-add {
+.button-add {
   background: #9fbb58; }
-  .button-add:hover, .button-add:focus,
-  button[type="submit"].button-add:hover,
-  button[type="submit"].button-add:focus,
-  input[type="submit"].button-add:hover,
-  input[type="submit"].button-add:focus {
+  .button-add:hover, .button-add:focus {
     background: #8ba644; }
 
-.button-delete,
-button[type="reset"],
-input[type="reset"] {
+.button-delete {
   background: #e25440;
   box-shadow: none; }
-  .button-delete:hover, .button-delete:focus,
-  button[type="reset"]:hover,
-  button[type="reset"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:focus {
+  .button-delete:hover, .button-delete:focus {
     background: #cf3520; }
 
 .button-alt {
@@ -2023,37 +1955,34 @@ input[type='radio']:focus + .gh-radio:after {
   background-color: transparent;
   background-image: -webkit-linear-gradient(top, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%);
   background-image: linear-gradient(to bottom,white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%); }
-  .floatingheader button,
-  .floatingheader .button {
+  .floatingheader .button, .floatingheader .modal-footer .reject-button-class, .modal-footer .floatingheader .reject-button-class {
     display: inline-block;
     font-size: 10px;
     min-height: 20px;
     height: 20px;
     padding: 3px 4px;
     vertical-align: top; }
-    .floatingheader button.button-back,
-    .floatingheader .button.button-back {
+    .floatingheader .button.button-back, .floatingheader .modal-footer .button-back.reject-button-class, .modal-footer .floatingheader .button-back.reject-button-class {
       position: relative;
       top: -2px;
       left: 3px;
       display: none;
       padding: 0 6px 0 3px; }
-      .floatingheader button.button-back:active,
-      .floatingheader .button.button-back:active {
+      .floatingheader .button.button-back:active, .floatingheader .modal-footer .button-back.reject-button-class:active, .modal-footer .floatingheader .button-back.reject-button-class:active {
         box-shadow: none; }
-      .floatingheader button.button-back:before,
-      .floatingheader .button.button-back:before {
+      .floatingheader .button.button-back:before, .floatingheader .modal-footer .button-back.reject-button-class:before, .modal-footer .floatingheader .button-back.reject-button-class:before {
         left: -8px;
         border-width: 10px 8px 10px 0; }
       @media (max-width: 800px) {
-        .floatingheader button.button-back,
-        .floatingheader .button.button-back {
+        .floatingheader .button.button-back, .floatingheader .modal-footer .button-back.reject-button-class, .modal-footer .floatingheader .button-back.reject-button-class {
           display: inline-block; } }
   .floatingheader small {
     font-size: 0.85em; }
-  .floatingheader a {
+  .floatingheader a,
+  .floatingheader button {
     color: #aaa9a2; }
-    .floatingheader a:hover {
+    .floatingheader a:hover,
+    .floatingheader button:hover {
       color: #242628; }
 
 /* ==========================================================================
@@ -2269,10 +2198,6 @@ input[type='radio']:focus + .gh-radio:after {
   .dropdown.active:hover {
     text-decoration: none; }
 
-a.dropdown,
-button.dropdown {
-  cursor: pointer; }
-
 /* ==========================================================================
   Dropdown Show & Hide
   ---
@@ -2448,8 +2373,7 @@ button.dropdown {
     max-height: 253px;
     overflow: auto; }
   .notification .close, .notification-success .close, .notification-error .close, .notification-warn .close, .notification-info .close {
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer; }
+    color: rgba(255, 255, 255, 0.6); }
     .notification .close:after, .notification-success .close:after, .notification-error .close:after, .notification-warn .close:after, .notification-info .close:after {
       font-family: "GhostIcons";
       font-weight: normal;
@@ -4603,20 +4527,19 @@ body.zen {
     position: absolute;
     bottom: 44px;
     right: -3px; }
-  #publish-bar button {
+  #publish-bar .button-save {
     min-height: 30px;
     height: 30px;
     line-height: 12px;
     padding: 0 10px;
     margin-top: 5px;
     border-top: rgba(255, 255, 255, 0.4) 1px solid; }
-  #publish-bar .button-link {
-    border-top: none; }
   #publish-bar .options {
     width: 30px;
     min-height: 30px;
     height: 30px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    border-top: rgba(255, 255, 255, 0.4) 1px solid; }
   #publish-bar .splitbutton-save .button-save,
   #publish-bar .splitbutton-save .button-delete,
   #publish-bar .splitbutton-delete .button-save,
@@ -5218,8 +5141,7 @@ body.zen {
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   position: relative;
-  top: 1px;
-  cursor: pointer; }
+  top: 1px; }
   .post-settings:before {
     font-family: "GhostIcons";
     font-weight: normal;
@@ -5338,7 +5260,8 @@ body.zen {
   .post-settings-menu .delete {
     display: block;
     padding: 10px 15px;
-    cursor: pointer; }
+    width: 100%;
+    text-align: left; }
     .post-settings-menu .delete:before {
       font-family: "GhostIcons";
       font-weight: normal;
@@ -6101,6 +6024,7 @@ body.zen {
     bottom: 3px;
     left: 3px;
     border-radius: 100%;
+    width: calc(100% - 6px);
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     color: #fff;
