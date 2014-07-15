@@ -1,7 +1,7 @@
 {
     "name": "ghost-ui",
     "description": "The user interface framework for the Ghost blogging platform.",
-    "version": "0.8.4",
+    "version": "0.8.5",
     "keywords": [
         "ghost"
     ],
