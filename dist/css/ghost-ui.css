@@ -5528,7 +5528,6 @@ body.zen {
   background: #fff; }
   @media (max-width: 800px) {
     .settings-content {
-      display: none;
       width: 100%;
       left: 100%;
       right: -100%;
@@ -5607,6 +5606,9 @@ body.zen {
           padding: 0.5em 1.37em; } }
     .settings-content .page-actions.page-actions-alt {
       left: 40px; }
+      @media (max-width: 1000px) {
+        .settings-content .page-actions.page-actions-alt {
+          left: 15px; } }
     .settings-content .page-actions .button-add {
       position: relative;
       padding-left: 50px;
@@ -6047,7 +6049,7 @@ body.zen {
       .settings .user-details-bottom {
         margin: -104px 0 0 0; } }
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .users-back {
     display: none; } }
 @media (max-width: 650px) {
