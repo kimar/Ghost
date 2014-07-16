@@ -1729,7 +1729,7 @@ legend {
    ========================================================================== */
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 textarea,
-.gh-select {
+select {
   display: block;
   padding: 8px 10px;
   width: 100%;
@@ -1743,7 +1743,7 @@ textarea,
   transition: border-color, 0.15s linear; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   textarea:focus,
-  .gh-select:focus {
+  select:focus {
     border-color: #aaa9a2; }
 
 textarea {
@@ -1878,7 +1878,7 @@ input[type='radio']:focus + .gh-radio:after {
 /* =============================================================================
    Select Component
    ---
-   <span class="gh-select" {{bind-attr data-select-text=selectedTheme.label}}>
+   <span class="gh-select">
        {{view Ember.Select
            id="activeTheme"
            name="general[activeTheme]"
@@ -1890,18 +1890,11 @@ input[type='radio']:focus + .gh-radio:after {
    </span>
    ============================================================================= */
 .gh-select {
-  height: 37px;
-  position: relative; }
-  .gh-select:before {
-    content: attr(data-select-text);
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 1.1rem;
-    font-weight: normal;
-    color: #242628;
-    line-height: 35px;
-    pointer-events: none; }
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; }
   .gh-select:after {
     font-family: "GhostIcons";
     font-weight: normal;
@@ -1923,13 +1916,22 @@ input[type='radio']:focus + .gh-radio:after {
   .gh-select:hover {
     text-decoration: none; }
   .gh-select select {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    width: 100%;
-    height: 100%; }
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    text-indent: 0.01px;
+    text-overflow: "";
+    background: #fff;
+    outline: none;
+    padding: 8px 10px;
+    line-height: normal; }
+    .gh-select select::-ms-expand {
+      display: none; }
+    .gh-select select:focus {
+      outline: none; }
+    .gh-select select:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000; }
 
 /*
  * Floating header styles
@@ -5196,55 +5198,23 @@ body.zen {
     padding: 5px 0 0 10px; }
     .post-settings-menu .post-setting-item.no-padding {
       padding: 0; }
-  .post-settings-menu .author-select-wrapper {
-    display: inline-block;
-    position: relative;
-    height: 36px;
-    width: 100%; }
-    .post-settings-menu .author-select-wrapper:before {
-      content: attr(data-select-text);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      font-size: 1.1em;
+  .post-settings-menu .gh-select {
+    height: 36px; }
+    .post-settings-menu .gh-select:after {
       color: #e2edf2;
-      line-height: 36px;
-      text-indent: 10px; }
-    .post-settings-menu .author-select-wrapper:after {
-      font-family: "GhostIcons";
-      font-weight: normal;
-      font-style: normal;
-      vertical-align: -7%;
-      text-transform: none;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      content: "\e001";
-      font-size: 0.85em;
+      margin-top: -0.425em; }
+    .post-settings-menu .gh-select select {
+      border: 0;
+      background: transparent;
+      border-radius: 0;
       color: #e2edf2;
-      position: absolute;
-      top: 50%;
-      right: 0.8em;
-      position: absolute;
-      margin-top: -0.425em;
-      pointer-events: none; }
-    .post-settings-menu .author-select-wrapper:hover {
-      text-decoration: none; }
-    .post-settings-menu .author-select-wrapper select {
-      opacity: 0;
-      width: 100%;
-      margin-bottom: 0;
       height: 36px; }
-    .post-settings-menu .author-select-wrapper:hover {
-      background: #35393b; }
+      .post-settings-menu .gh-select select:focus {
+        background: #35393b; }
     @media (max-width: 550px) {
-      .post-settings-menu .author-select-wrapper, .post-settings-menu .author-select-wrapper:before,
-      .post-settings-menu .author-select-wrapper select {
-        height: 41px; }
-      .post-settings-menu .author-select-wrapper:before {
-        line-height: 41px; } }
+      .post-settings-menu .gh-select,
+      .post-settings-menu .gh-select select {
+        height: 41px; } }
   .post-settings-menu .checkbox {
     position: relative;
     margin-top: 0;
@@ -5255,8 +5225,6 @@ body.zen {
       background: #35393b; }
   .post-settings-menu input[type='checkbox']:focus + .checkbox:after {
     border-color: #4d5356; }
-  .post-settings-menu .select-wrapper {
-    width: calc(100% - 10px); }
   .post-settings-menu .delete {
     display: block;
     padding: 10px 15px;
@@ -5278,7 +5246,8 @@ body.zen {
     .post-settings-menu .delete:hover {
       text-decoration: none; }
     .post-settings-menu .delete:hover {
-      background: #e25440; }
+      background: #e25440;
+      color: #fff; }
 
 /*
  * Setting pages styles
