@@ -2493,7 +2493,7 @@ input[type='radio']:focus + .gh-radio:after {
 /* ==========================================================================
   Object List
   ========================================================================== */
-.object-list + .object-list {
+.object-list:not(:first-of-type) {
   margin-top: 34px; }
 
 .object-list-title {
@@ -2503,35 +2503,44 @@ input[type='radio']:focus + .gh-radio:after {
   margin-bottom: 14px; }
 
 .object-list-item {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start;
-  -webkit-justify-content: start;
-  -moz-justify-content: start;
-  -ms-justify-content: start;
-  -o-justify-content: start;
-  justify-content: start;
-  -ms-flex-pack: start;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
   border-top: 1px solid #edece4;
   min-height: 68px; }
+  @media (max-width: 500px) {
+    .object-list-item {
+      display: block;
+      padding: 15px 0; }
+      .object-list-item:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  @media (min-width: 501px) {
+    .object-list-item {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -moz-box-pack: start;
+      box-pack: start;
+      -webkit-justify-content: start;
+      -moz-justify-content: start;
+      -ms-justify-content: start;
+      -o-justify-content: start;
+      justify-content: start;
+      -ms-flex-pack: start;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      padding: 0 15px; } }
 
 a.object-list-item {
   text-decoration: none; }
@@ -2566,6 +2575,12 @@ a.object-list-item {
   display: block;
   border: 1px solid #979797; }
 
+@media (max-width: 500px) {
+  .object-list-item-icon,
+  .object-list-item-figure {
+    float: left;
+    margin-right: 15px; } }
+
 .object-list-item-body {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -2585,6 +2600,9 @@ a.object-list-item {
   -ms-flex-align: stretch;
   padding-left: 15px;
   line-height: 1; }
+  @media (max-width: 500px) {
+    .object-list-item-body {
+      margin-top: 3px; } }
   .object-list-item-body .name {
     display: inline-block;
     font-size: 15px;
@@ -2596,8 +2614,16 @@ a.object-list-item {
     color: #c0bfb6;
     margin-top: 3px; }
 
-.object-list-item-aside .object-list-action + .object-list-action {
+@media (max-width: 500px) {
+  .object-list-item-aside {
+    float: left;
+    width: 100%;
+    margin-top: 15px; } }
+.object-list-item-aside .object-list-action:not(:first-of-type) {
   margin-left: 20px; }
+  @media (min-width: 501px) {
+    .object-list-item-aside .object-list-action:not(:first-of-type) {
+      margin-left: 50px; } }
 .object-list-item-aside .role-label {
   float: left;
   margin-top: -1px; }
@@ -5125,6 +5151,8 @@ body.zen {
   .invite-new-user .form-group select {
     margin-top: 1px;
     width: 100%; }
+  .invite-new-user .form-group .gh-select {
+    padding-right: 1px; }
 .invite-new-user .button-add {
   width: 100%;
   padding: 0.85rem 1.9rem;
@@ -5549,7 +5577,8 @@ body.zen {
           top: 5px;
           left: 14px;
           min-height: 0;
-          height: 30px;
+          padding-top: 8px;
+          padding-bottom: 8px;
           display: block; }
           .settings-content > header .button-back:before {
             left: -9px;
@@ -5613,11 +5642,11 @@ body.zen {
         .settings-content .page-actions .button-add {
           height: 30px;
           min-height: 30px;
-          padding: 7px 10px 7px 40px; }
+          padding: 6px 10px 8px 40px; }
           .settings-content .page-actions .button-add:before {
             padding-top: 7px;
-            left: 6px;
-            width: 24px; } }
+            left: 8px;
+            width: 22px; } }
   .settings-content .content {
     position: absolute;
     top: 0;
@@ -5630,15 +5659,13 @@ body.zen {
     .settings-content .content:before {
       display: block;
       content: "";
-      height: 77px; }
-      @media (max-height: 600px) {
-        .settings-content .content:before {
-          display: none; } }
+      height: 87px; }
     .settings-content .content.no-padding {
       padding: 0; }
     @media (max-width: 1000px) {
       .settings-content .content {
-        padding-left: 15px; } }
+        padding-left: 15px;
+        padding-right: 15px; } }
     @media (max-width: 550px) {
       .settings-content .content {
         padding: 0 15px 40px; } }
