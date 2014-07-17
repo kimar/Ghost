@@ -5663,14 +5663,14 @@ body.zen {
   margin-top: 3.2em; }
 
 /*
- * Setup screen styles
+ * Ghost Setup Screen
  *
- * Table of Contents
+ * These styles cover /ghost/setup/ which is the first screen that appears
+ * when a new instance of Ghost is setup and run.
  *
- * Setup Ghost for The First Time
  */
 /* ==========================================================================
-   Setup Ghost for The First Time
+   Main Styles
    ========================================================================== */
 .ghost-setup {
   color: #7d878a;
