@@ -2493,8 +2493,8 @@ input[type='radio']:focus + .gh-radio:after {
 /* ==========================================================================
   Object List
   ========================================================================== */
-.object-list:not(:first-of-type) {
-  margin-top: 34px; }
+.invited-users {
+  margin-bottom: 34px; }
 
 .object-list-title {
   font-size: 13px;
@@ -3522,8 +3522,7 @@ nav li a {
       background: #484c50; }
   .login-form .email-wrap {
     position: relative;
-    margin-right: 3px;
-    border-radius: 2px 0 0 2px; }
+    margin-right: 3px; }
     .login-form .email-wrap:before {
       font-family: "GhostIcons";
       font-weight: normal;
@@ -3543,14 +3542,12 @@ nav li a {
       text-decoration: none; }
     @media (max-width: 630px) {
       .login-form .email-wrap {
-        margin-right: 0;
-        border-radius: 2px; } }
+        margin-right: 0; } }
     .login-form .email-wrap .email {
       padding-left: 28px;
       border-radius: 2px 0 0 2px; }
   .login-form .password-wrap {
-    position: relative;
-    border-radius: 0 2px 2px 0; }
+    position: relative; }
     .login-form .password-wrap:before {
       font-family: "GhostIcons";
       font-weight: normal;
@@ -3568,12 +3565,22 @@ nav li a {
       z-index: 100; }
     .login-form .password-wrap:hover {
       text-decoration: none; }
-    @media (max-width: 630px) {
-      .login-form .password-wrap {
-        border-radius: 2px; } }
     .login-form .password-wrap .password {
       padding-left: 28px;
       border-radius: 0 2px 2px 0; }
+  @media (min-width: 631px) {
+    .login-form .email-wrap,
+    .login-form .email-wrap .email {
+      border-radius: 2px 0 0 2px; }
+    .login-form .password-wrap,
+    .login-form .password-wrap .password {
+      border-radius: 0 2px 2px 0; } }
+  @media (max-width: 630px) {
+    .login-form .email-wrap,
+    .login-form .email-wrap .email,
+    .login-form .password-wrap,
+    .login-form .password-wrap .password {
+      border-radius: 2px; } }
   .login-form button {
     width: 85px;
     height: 36px;
@@ -5145,14 +5152,11 @@ body.zen {
     float: left;
     width: 60%; }
   .invite-new-user .form-group:nth-of-type(2) {
-    float: right;
-    width: 35%; }
-  .invite-new-user .form-group input,
-  .invite-new-user .form-group select {
-    margin-top: 1px;
+    float: left;
+    width: 35%;
+    margin-left: 5%; }
+  .invite-new-user .form-group input {
     width: 100%; }
-  .invite-new-user .form-group .gh-select {
-    padding-right: 1px; }
 .invite-new-user .button-add {
   width: 100%;
   padding: 0.85rem 1.9rem;
