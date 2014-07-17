@@ -1956,7 +1956,7 @@ input[type='radio']:focus + .gh-radio:after {
   right: 0;
   z-index: 400;
   height: 40px;
-  padding: 10px 15px;
+  padding: 6px 15px 14px;
   text-transform: uppercase;
   color: #aaa9a2;
   background-color: transparent;
@@ -4097,7 +4097,8 @@ nav li a {
       margin: 0 auto; }
   .manage .content-preview .post-controls {
     float: right;
-    position: relative; }
+    position: relative;
+    top: 3px; }
   .manage .content-preview .post-settings-menu {
     position: absolute;
     top: 35px;
