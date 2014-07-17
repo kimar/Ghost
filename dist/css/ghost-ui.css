@@ -1729,13 +1729,14 @@ legend {
    ========================================================================== */
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 textarea,
+.gh-select,
 select {
   display: block;
   padding: 8px 10px;
   width: 100%;
   border: 1px solid #E0DFD7;
   border-radius: 2px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: normal;
   color: #242628;
   -webkit-transition: border-color, 0.15s linear;
@@ -1743,6 +1744,7 @@ select {
   transition: border-color, 0.15s linear; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   textarea:focus,
+  .gh-select:focus,
   select:focus {
     border-color: #aaa9a2; }
 
@@ -1753,9 +1755,6 @@ textarea {
   height: auto;
   min-height: 6.5em; }
 
-@-moz-document url-prefix() {
-  select {
-    height: auto; } }
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   padding-right: 6px; }
 
@@ -1894,7 +1893,9 @@ input[type='radio']:focus + .gh-radio:after {
   display: block;
   overflow: hidden;
   width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  padding: 0;
+  border-width: 0; }
   .gh-select:after {
     font-family: "GhostIcons";
     font-weight: normal;
@@ -1910,7 +1911,6 @@ input[type='radio']:focus + .gh-radio:after {
     position: absolute;
     top: 50%;
     right: 0.8em;
-    position: absolute;
     margin-top: -0.5em;
     pointer-events: none; }
   .gh-select:hover {
@@ -1933,6 +1933,11 @@ input[type='radio']:focus + .gh-radio:after {
       color: transparent;
       text-shadow: 0 0 0 #000; }
 
+@-moz-document url-prefix() {
+  .gh-select {
+    border-width: 1px; }
+    .gh-select select {
+      padding: 7px 10px 7px 8px; } }
 /*
  * Floating header styles
  *
