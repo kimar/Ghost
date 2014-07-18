@@ -4557,7 +4557,8 @@ body.zen {
     position: absolute;
     bottom: 44px;
     right: -3px; }
-  #publish-bar .button-save {
+  #publish-bar .button-save,
+  #publish-bar .button-delete {
     min-height: 30px;
     height: 30px;
     line-height: 12px;
