@@ -58,7 +58,8 @@ module.exports = function (grunt) {
                     require: ['bourbon']
                 },
                 files: {
-                    'dist/css/<%= pkg.name %>.css': 'sass/screen.scss'
+                    'dist/css/<%= pkg.name %>.css': 'sass/screen.scss',
+                    'docs/dist/css/<%= pkg.name %>.css': 'sass/screen.scss'
                 }
             },
             compress: {
