@@ -139,9 +139,9 @@
             /* Transition of transform properties are split out due to a
                 defect in the vendor prefixing of transform transitions.
                 See: http://github.com/thoughtbot/bourbon/pull/86 */
-            @include transition-property(transform);
-            @include transition-duration(0.3);
-            @include transition-timing-function(ease);
+            transition-property: transform;
+            transition-duration: 0.3;
+            transition-timing-function: ease;
         };
 
         transition: background-color 0.3s linear;
