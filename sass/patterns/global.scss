@@ -16,7 +16,7 @@ html {
 body {
     width: 100%;
     color: lighten($darkgrey, 10%);
-    size: 1.4rem;
+    font-size: 1.4rem;
     font-feature-settings: "kern" 1;
     overflow-x: hidden; // Never allow horizontal scrollbars
 }
