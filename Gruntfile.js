@@ -72,6 +72,19 @@ module.exports = function (grunt) {
             }
         },
 
+        // Autoprefix all the things, for the last 2 versions of major browsers
+        autoprefixer: {
+            options: {
+                silent: true, // suppress logging
+                map: true, // Use and update the sourcemap
+                browsers: ["last 2 versions", "> 1%", "Explorer 10"]
+            },
+            single_file: {
+                src: 'dist/css/<%= pkg.name %>.min.css',
+                dest: 'dist/css/<%= pkg.name %>.min.css'
+            }
+        },
+
         // ### config for grunt-shell
         // command line tools
         shell: {
@@ -86,7 +99,7 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: '**/**.scss',
-                tasks: ['sass']
+                tasks: ['sass', 'autoprefixer']
             }
         }
     });
