@@ -5,9 +5,7 @@
  * Licensed under MIT (https://github.com/TryGhost/Ghost-UI/blob/master/LICENSE)
  */
 
- var path = require('path'),
-     breakpoint = path.join(__dirname, 'bower_components/breakpoint-sass/stylesheets/'),
-     normalize = path.join(__dirname, 'bower_components/normalize-scss/');
+ var path = require('path');
 
 module.exports = function (grunt) {
     'use strict';
@@ -52,15 +50,23 @@ module.exports = function (grunt) {
         // ### config for grunt-sass
         // compile sass to css
         sass: {
-            dist: {
+            dev: {
                 options: {
                     outputStyle: 'nested',
                     sourceMap: true
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.css': 'sass/screen.scss',
-                    'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss',
                     'docs/dist/css/<%= pkg.name %>.css': 'sass/screen.scss',
+                }
+            },
+            dist: {
+                options: {
+                    outputStyle: 'compressed',
+                    sourceMap: true
+                },
+                files: {
+                    'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss',
                     'docs/dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
                 }
             }
