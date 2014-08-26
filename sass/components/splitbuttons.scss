@@ -28,7 +28,8 @@
     .btn:first-child {
       margin-left: 0;
       &:not(:last-child):not(.dropdown-toggle) {
-        @include border-right-radius(0);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
 
@@ -36,7 +37,8 @@
     .dropdown-toggle {
         padding-left: 12px;
         padding-right: 12px;
-        @include border-left-radius(0);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
 
         &.btn-sm {
             padding-left: 10px;
@@ -105,7 +107,8 @@
 
     button {
         font-size: 11px; // hack to restore font size
-        @include border-right-radius(0);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     // This is the additional dropdown arrow, to the right of the button.
