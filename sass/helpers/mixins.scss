@@ -107,10 +107,31 @@
     $size: $size / 2;
     width: 0;
     height: 0;
-    border-left: $size solid #{setTriangleColor($direction, "left", $color)};
-    border-right: $size solid #{setTriangleColor($direction, "right", $color)};
-    border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
-    border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+
+    @if $direction == "down" {
+        border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+        border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+        border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+    }
+
+    @if $direction == "up" {
+        border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+        border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+        border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+    }
+
+    @if $direction == "left" {
+        border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+        border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+        border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+    }
+
+    @if $direction == "right" {
+        border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+        border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+        border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+    }
+
 }
 
 //Utility function to return the relevant colour depending on what type of arrow it is
