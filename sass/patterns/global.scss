@@ -94,11 +94,11 @@ mark {
 a {
     color: $blue;
     text-decoration: none;
-    @include transition(background 0.3s, color 0.3s);
+    transition: background 0.3s, color 0.3s;
 
     &:hover {
         text-decoration: none;
-        @include transition(background 0.1s, color 0.1s);
+        transition: background 0.1s, color 0.1s;
     }
 
     &.highlight {

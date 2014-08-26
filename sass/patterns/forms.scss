@@ -146,7 +146,7 @@ select {
     font-weight: normal;
     color: $darkgrey;
 
-    @include transition(border-color 0.15s linear);
+    transition: border-color 0.15s linear;
 
     &:focus {
         border-color: $brown;
@@ -188,9 +188,9 @@ input[type="number"] {
     }
     label {
         .input-toggle-component {
-            @include transition(background 0.15s ease-in-out, border-color 0.15s ease-in-out);
+            transition: background 0.15s ease-in-out, border-color 0.15s ease-in-out;
             &:before {
-                @include transition(opacity 0.15s ease-in-out);
+                transition: opacity 0.15s ease-in-out;
                 content: '';
                 position: absolute;
                 width: 10px;
@@ -232,9 +232,9 @@ input[type="number"] {
     }
     label {
         .input-toggle-component {
-            @include transition(background 0.15s ease-in-out, border-color 0.15s ease-in-out);
+            transition: background 0.15s ease-in-out, border-color 0.15s ease-in-out;
             &:before {
-                @include transition(opacity 0.15s ease-in-out);
+                transition: opacity 0.15s ease-in-out;
                 content: '';
                 position: absolute;
                 width: 8px;

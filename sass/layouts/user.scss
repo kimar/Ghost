@@ -40,10 +40,7 @@
     color: rgba(255,255,255,0.8);
     z-index: 2;
     border-radius: $rounded;
-    @include transition(
-        color 0.3s ease,
-        background 0.3s ease
-    );
+    transition: color 0.3s ease, background 0.3s ease;
     @media (max-width: 1000px) {
         right: 15px;
     }
@@ -167,7 +164,7 @@
     line-height: 120px;
     text-transform: uppercase;
     text-decoration: none;
-    @include transition(opacity 0.3s ease);
+    transition: opacity 0.3s ease;
 }
 
 .user-details-bottom {

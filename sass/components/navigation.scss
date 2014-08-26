@@ -42,13 +42,13 @@
     text-transform: uppercase;
     border-radius: 4px;
     white-space: nowrap;
-    @include transition(color 0.5s, background 0.5s);
+    transition: color 0.5s, background 0.5s;
 }
 .nav-item.active .nav-label,
 .nav-item:hover .nav-label {
     color: #fff;
     background: darken($darkgrey, 9%);
-    @include transition(color 0.1s, background 0.1s);
+    transition: color 0.1s, background 0.1s;
 }
 
 // Ghost branding
@@ -59,7 +59,7 @@
     color: lighten($grey, 20%);
     font-size: 1.2rem;
     line-height: 1em;
-    @include transition(color 0.5s);
+    transition: color 0.5s;
 
     span {
         display: none;
@@ -68,7 +68,7 @@
 .ghost-logo:hover,
 .ghost-logo:focus {
     color: $lightgrey;
-    @include transition(color 0.1s);
+    transition: color 0.1s;
 
     .nav-label {
         background: transparent;
@@ -115,7 +115,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        @include transition(background 0.5s);
+        transition: background 0.5s;
 
         small {
             display: none; // hide until mobile
@@ -130,7 +130,7 @@
     &:hover .name {
         color: rgba(255,255,255,0.9);
         background: darken($darkgrey, 7%);
-        @include transition(background 0.1s);
+        transition: background 0.1s;
     }
 
     i:before {
@@ -171,7 +171,7 @@
         -webkit-overflow-scrolling: touch;
 
         @include transform(translate3d(-60px, 0px, 0px)); // Not off the screen, to give a parallax effect
-        @include transition(transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1));
+        transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
 
         .thing, .thing2 {
             display: block;
@@ -228,7 +228,7 @@
         padding: 15px;
         border-bottom: none;
         border-top: $darkgrey 1px solid;
-        @include transition(color 0.5s, background 0.5s);
+        transition: color 0.5s, background 0.5s;
 
         .nav-label {
             padding: 0;
@@ -261,11 +261,11 @@
         &:hover {
             color: rgba(255,255,255,0.9);
             background: $darkgrey;
-            @include transition(color 0.1s, background 0.1s);
+            transition: color 0.1s, background 0.1s;
 
             .name {
                 background: transparent;
-                @include transition(none);
+                transition: none;
             }
         }
 

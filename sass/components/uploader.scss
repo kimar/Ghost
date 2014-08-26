@@ -30,7 +30,7 @@
         @include icon($i-image, 60px, darken($lightbrown, 3%)) {
             display: inline-block;
             vertical-align: initial;
-            @include transition(transform 1s ease);
+            transition: transform 1s ease;
         }
     }
 
