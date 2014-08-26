@@ -92,7 +92,6 @@
 
         &.url{
             font: -webkit-small-control;
-            box-sizing: border-box;
             width: 276px;
             vertical-align: middle;
             padding: 9px 7px;
@@ -150,7 +149,6 @@
 // TODO: Find a better name for this.
 
 .pre-image-uploader {
-    @include box-sizing(border-box);
     @include baseline;
     position: relative;
     overflow: hidden;
