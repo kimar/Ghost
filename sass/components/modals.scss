@@ -13,13 +13,13 @@
     overflow-y: scroll;
     z-index: 1040;
     transition: all 0.15s linear 0s;
-    @include transform(translateZ(0));
+    transform: translateZ(0);
 }
 
 .fade {
     opacity: 0;
     transition: opacity 0.2s linear 0s;
-    @include transform(translateZ(0));
+    transform: translateZ(0);
 
     &.in {
         opacity: 1;

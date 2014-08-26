@@ -24,7 +24,7 @@
 
 // TODO: What is this? Docs plz.
 .js-bb-notification {
-    @include transform(translateZ(0));
+    transform: translateZ(0);
 }
 
 //
@@ -51,7 +51,7 @@
     background: $blue;
     position: relative;
     box-shadow: $shadow;
-    @include transform(translateZ(0));
+    transform: translateZ(0);
 
     @media (max-width: 400px) {
         margin-bottom: 1px;

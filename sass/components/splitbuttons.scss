@@ -68,26 +68,26 @@
 
         // Keep the arrow spun when the associated menu is open
         &.active .options:before {
-            @include transform(rotate(-360deg));
+            transform: rotate(-360deg);
         }
 
         &.up.active .options:before {
             margin-top:-4px;
-            @include transform(rotate(540deg));
+            transform: rotate(540deg);
         }
 
         // Spin the arrow on hover and while menu is open
         &:hover .options:before,
         &:focus .options:before {
             will-change: transform;
-            @include transform(rotate(-360deg));
+            transform: rotate(-360deg);
         }
 
         // If it has a class of "up" spin it an extra 180degress to point up
         &.up:hover .options:before,
         &.up:focus .options:before {
             margin-top:-4px;
-            @include transform(rotate(540deg));
+            transform: rotate(540deg);
             transition-property: transform;
             transition-duration: 0.6;
             transition-timing-function: ease;
@@ -145,12 +145,12 @@
 
         // Keep the arrow spun when the associated menu is open
         &.active:before {
-            @include transform(rotate(360deg));
+            transform: rotate(360deg);
         }
 
         &.up.active:before {
             margin-top:-4px;
-            @include transform(rotate(540deg));
+            transform: rotate(540deg);
         }
 
         // Spin the arrow on hover and while menu is open
@@ -161,7 +161,7 @@
             background: #f8f8f8;
             @include icon($i-chevron-down) {
                 will-change: transform;
-                @include transform(rotate(360deg));
+                transform: rotate(360deg);
             };
         }
 
@@ -170,7 +170,7 @@
         &.up:focus {
             @include icon($i-chevron-down) {
                 margin-top:-4px;
-                @include transform(rotate(540deg));
+                transform: rotate(540deg);
                 transition-property: transform;
                 transition-duration: 0.6;
                 transition-timing-function: ease;

@@ -230,7 +230,7 @@ input[type="number"] {
                 border: 2px solid #fff;
                 border-top: none;
                 border-right: none;
-                @include transform(rotate(-45deg));
+                transform: rotate(-45deg);
                 opacity: 0;
             }
         }
