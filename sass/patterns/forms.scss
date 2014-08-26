@@ -101,7 +101,11 @@ form {
     }
 
     input {
-        @include position(absolute, 0 0 0 -9999px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -9999px;
     }
 
     .input-toggle-component {
@@ -305,7 +309,9 @@ input[type="number"] {
     border-width: 0;
 
     @include icon-after($i-chevron-down, 0.85em, $midbrown) {
-        @include position(absolute, 50% 0.8em null null);
+        position: absolute;
+        top: 50%;
+        right: 0.8em;
         margin-top: -0.5em;
         pointer-events: none;
     };
