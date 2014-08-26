@@ -2,7 +2,7 @@
 // Helpers: Sass Utilities
 // --------------------------------------------------
 
-@import "_bourbon"; // via Bower
+@import "../node_modules/node-bourbon/assets/stylesheets/_bourbon"; // via NPM
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/icons";
@@ -13,7 +13,7 @@
 // Libraries: Code by Other Homies
 // --------------------------------------------------
 
-@import "normalize"; // via Bower
+@import "../bower_components/normalize-scss/_normalize"; // via Bower
 @import "lib/nprogress";
 @import "lib/codemirror";
 

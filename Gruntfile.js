@@ -54,22 +54,13 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
-                    loadPath: [breakpoint, normalize],
-                    require: ['bourbon']
+                    outputStyle: 'nested',
+                    sourceMap: true
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.css': 'sass/screen.scss',
-                    'docs/dist/css/<%= pkg.name %>.css': 'sass/screen.scss'
-                }
-            },
-            compress: {
-                options: {
-                    style: 'compressed',
-                    loadPath: [breakpoint, normalize],
-                    require: ['bourbon']
-                },
-                files: {
                     'dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss',
+                    'docs/dist/css/<%= pkg.name %>.css': 'sass/screen.scss',
                     'docs/dist/css/<%= pkg.name %>.min.css': 'sass/screen.scss'
                 }
             }
@@ -89,7 +80,7 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: '**/**.scss',
-                tasks: ['sass']                
+                tasks: ['sass']
             }
         }
     });
