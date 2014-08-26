@@ -3,7 +3,6 @@
 // --------------------------------------------------
 
 .image-uploader {
-    @include box-sizing(border-box);
     @include baseline;
     position: relative;
     overflow:hidden;
