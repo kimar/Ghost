@@ -1,5 +1,8 @@
 'use strict';
 
+// Original Ghost-S3 Credits goes to: https://github.com/screenrev/ghost-s3
+// Modified by https://github.com/kimar to be pluggable into Ghost v0.5.1
+
 // # S3 storage module for Ghost blog http://ghost.org/
 var fs = require('fs');
 var path = require('path');
